@@ -1,0 +1,58 @@
+:root {
+  /* Colors */
+  --color-light: #f7f7f7;
+  --color-dark: #181818;
+  --color-dark-50: #18181850;
+  --color-primary-gray: #e6e6e6;
+  --color-primary-gray-50: #e6e6e650;
+  --color-secundary-gray: #f2f2f2;
+  --color-primary-blue: #0063f7;
+}
+
+/* Bootstrap - Changes */
+.list-group {
+  border: none;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.collapse .card .list-group {
+  border: none;
+}
+
+.collapse .card .list-group-item {
+  border: none;
+}
+
+button.btn.btn_border-none-focus:active {
+  border-color: transparent;
+}
+
+header {
+  background-color: var(--color-secundary-gray);
+}
+
+form input.w-16rem {
+  max-width: 16rem;
+}
+
+/* Icons */
+.bi-search {
+  left: 10.4%;
+  font-size: 1.2rem;
+}
+
+.bi-person-circle,
+.bi-justify-left,
+.bi-x {
+  font-size: 36px;
+}
+
+/* Edit Profile */
+/* Eye - Show and Hide */
+#eye {
+  bottom: 4.8rem;
+  right: 2.22rem;
+}

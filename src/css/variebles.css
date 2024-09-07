@@ -1,0 +1,45 @@
+/* Color */
+.primary-blue {
+    color: var(--color-primary-blue);
+}
+
+/* Measures */
+.vh100-70px {
+  height: calc(100vh - 70px);
+}
+
+.p-20px {
+  padding: 1.2rem;
+}
+
+/* Button */
+.btn-blue {
+  color: var(--color-light);
+  background-color: var(--color-primary-blue);
+  border: 1px var(--color-primary-blue) solid;
+  transition: .4s;
+  
+  &:hover {
+    color: var(--color-primary-blue);
+    background-color: var(--color-light);
+    border: 1px var(--color-primary-blue) solid;
+  }
+}
+
+/* Button Outline */
+.btn-outline-gray {
+  color: var(--color-dark);
+  background-color: var(--color-primary-gray);
+  border: 1px var(--color-primary-light) solid;
+  transition: 0.4s;
+
+  &:hover {
+    background-color: var(--color-primary-gray-50);
+  }
+}
+
+/* Elevation (Focus) */
+form input.elevation-gray:focus {
+  border: none;
+  box-shadow: 0 0 4px var(--color-dark-50);
+}
