@@ -29,69 +29,53 @@
         <div class="container-fluid px-3 px-md-5">
           <div class="collapse navbar-collapse">
             <button
-              class="btn btn_border-none-focus me-4 me-md-5 p-0 my-0 border-0 d-block"
-              data-bs-toggle="collapse" type="button" data-bs-target="#list" role="button" aria-expanded="false" aria-controls="collapseExample"
+              class="btn btn_border-none-focus me-3 me-md-5 p-0 my-0 border-0 d-block"
+              data-bs-toggle="collapse" type="button" data-bs-target="#list" role="button" aria-expanded="false" aria-controls="collapseExample" id="btn-togler"
             >
-              <i class="bi bi-justify-left primary-blue" id="btn-togler"></i>
+              <i class="bi bi-justify-left color-primary-blue" id="btn-togler-icon"></i>
             </button>
-            <div class="position-absolute top-100 left-0 vh100-70px">
-              <div class="collapse h-100" id="list">
-                <div class="card card-body rounded-0 rounded-end h-100">
-                  <ul class="navbar-nav list-group d-flex flex-column mb-auto">
-                    <li class="list-group-item p-0">
-                      <form class="input-group d-flex d-sm-none mb-3 mb-sm-none align-items-center w-100" role="search">
-                        <input
-                          class="form-control rounded-start ps-3 elevation-gray"
-                          type="search"
-                          placeholder="Pesquisar"
-                          aria-label="Search"
-                        />
-                        <button class="input-group-text btn btn-outline-gray" type="submit">
-                          <i class="bi bi-search"></i>
-                        </button>
-                      </form>
-                    </a>
-                    </li>
-                    <li class="list-group-item p-0">
-                      <a href="#" class="btn d-flex" role="button">
-                        <i class="bi bi-question-circle me-3"></i>
-                        <p>Home</p>
+            <div class="position-absolute top-100 left-0 dvh100-70px">
+                <div class="card card-body rounded-0 rounded-end h-100 bg-primary-blue">
+                  <ul class="navbar-nav list-group d-flex flex-column mb-auto gap-3" id="list-menu">
+                    <li class="list-group-item p-0 bg-transparent">
+                      <a href="#" class="btn d-flex align-items-center color-light" role="button">
+                        <i class="bi bi-house fs-2"></i>
+                        <p class="mb-0 fs-5"></p>
                       </a>
                     </li>
-                    <li class="list-group-item p-0">
-                      <a href="#" class="btn d-flex" role="button">
-                        <i class="bi bi-toggles2 me-3"></i>
-                        <p>Controles</p>
+                    <li class="list-group-item p-0 bg-transparent">
+                      <a href="#" class="btn d-flex align-items-center color-light" role="button">
+                        <i class="bi bi-toggles2 fs-2"></i>
+                        <p class="mb-0 fs-5"></p>
                       </a>
                     </li>
-                    <li class="list-group-item p-0">
-                      <a href="#" class="btn d-flex" role="button">
-                        <i class="bi bi-shield-check me-3"></i>
-                        <p>Compliance</p>
+                    <li class="list-group-item p-0 bg-transparent">
+                      <a href="#" class="btn d-flex align-items-center color-light" role="button">
+                        <i class="bi bi-file-earmark-text fs-2"></i>
+                        <p class="mb-0 fs-5"></p>
                       </a>
                     </li>
-                    <li class="list-group-item p-0">
-                      <a href="#" class="btn d-flex" role="button">
-                        <i class="bi bi-folder2 me-3"></i>
-                        <p>Arquivos</p>
+                    <li class="list-group-item p-0 bg-transparent">
+                      <a href="#" class="btn d-flex align-items-center color-light" role="button">
+                        <i class="bi bi-folder2 fs-2"></i>
+                        <p class="mb-0 fs-5"></p>
                       </a>
                     </li>
-                    <li class="list-group-item p-0">
-                      <a href="#" class="btn d-flex" role="button">
-                        <i class="bi bi-gear me-3"></i>
-                        <p>Comporação</p>
+                    <li class="list-group-item p-0 bg-transparent">
+                      <a href="#" class="btn d-flex align-items-center color-light" role="button">
+                        <i class="bi bi-gear fs-2"></i>
+                        <p class="mb-0 fs-5"></p>
                       </a>
                     </li>
                   </ul>
                   <ul class="list-group">
-                    <li class="list-group-item p-0 d-flex justify-content-center">
-                      <a href="#" class="btn" role="button">
-                        <i class="bi bi-question-circle"></i>
+                    <li class="list-group-item p-0 d-flex justify-content-center bg-transparent">
+                      <a href="#" class="btn color-light" role="button">
+                        <i class="bi bi-question-circle fs-2"></i>
                       </a>
                     </li>
                   </ul>
                 </div>
-              </div>
             </div>
             <ul
               class="navbar-nav w-100 d-flex justify-content-between"
@@ -117,7 +101,31 @@
                 </a>
               </li>
               <li class="nav-item dropdown d-flex align-items-center">
-                <p class="fs-5 mb-0 primary-blue">Olá, nome</p>
+                <button type="button" class="btn d-flex d-sm-none me-2" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="bi bi-search"></i></button>
+                <p class="fs-5 mb-0 me-1 color-primary-blue lh-sm">Olá,<br><span class="fw-bold">nome</span></p>
+
+                <!-- Modal -->
+<div class="modal fade d-sm-none" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+  <div class="modal-dialog m-0 mt-3 mx-3">
+    <div class="modal-content">
+      <div class="modal-body p-0">
+        <a class="nav-link w-100" href="#">
+          <form class="input-group d-flex align-items-center w-100" role="search">
+            <input
+              class="form-control rounded-start ps-3 elevation-gray"
+              type="search"
+              placeholder="Pesquisar"
+              aria-label="Search"
+            />
+            <button class="input-group-text btn btn-outline-gray" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
                 <a
                   class="nav-link dropdown-toggle"
                   href="#"
@@ -143,7 +151,7 @@
 
                       <div class="modal-body d-flex flex-column align-items-center">
                       </h1>
-                      <h2 class="fw-bold primary-blue__color display-6">
+                      <h2 class="fw-bold color-primary-blue display-6">
                         Editar Perfil
                       </h2>
                       <form class="w-100">
@@ -192,10 +200,10 @@
                             />
                         </div>
                         <div class="mb-3">
-                            <label for="password" class="form-label">Senha</label>
-                            <input
-                              type="password"
-                              class="form-control focus-ring pe-5"
+                          <label for="password" class="form-label">Senha</label>
+                          <input
+                            type="password"
+                            class="form-control focus-ring pe-5"
                               id="password"
                               placeholder="senha123"
                               required

@@ -38,9 +38,11 @@ form input.w-16rem {
   max-width: 16rem;
 }
 
+/* Button Open and Close Side Menu */
+
+
 /* Icons */
 .bi-search {
-  left: 10.4%;
   font-size: 1.2rem;
 }
 

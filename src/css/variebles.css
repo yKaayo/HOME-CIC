@@ -1,11 +1,19 @@
 /* Color */
-.primary-blue {
+.color-primary-blue {
     color: var(--color-primary-blue);
+}
+.color-light {
+    color: var(--color-light);
+}
+
+/* Background */
+.bg-primary-blue {
+  background-color: var(--color-primary-blue);
 }
 
 /* Measures */
-.vh100-70px {
-  height: calc(100vh - 70px);
+.dvh100-70px {
+  height: calc(100dvh - 70px);
 }
 
 .p-20px {
