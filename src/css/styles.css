@@ -58,3 +58,8 @@ form input.w-16rem {
   bottom: 4.8rem;
   right: 2.22rem;
 }
+
+/* Divergência */
+.divergencia .card {
+  width: 20rem;
+}
