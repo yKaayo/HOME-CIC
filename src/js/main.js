@@ -29,6 +29,19 @@ btnToggler.addEventListener("click", () => {
   }
 });
 
+// List Toggle Active
+const listGroup = document.querySelectorAll('#list-menu li a');
+
+for (let i = 0; i < listGroup.length; i++) {
+  listGroup[i].addEventListener('click', () => {
+    listGroup.forEach(item => {
+      item.classList.remove('active');
+    });
+
+    listGroup[i].classList.add('active');
+  });
+}
+
 // Show or Hide Password
 const eye = document.querySelector("#eye");
 const inputPassword = document.querySelector("#password");
@@ -42,28 +55,3 @@ eye.addEventListener("click", () => {
     eye.classList.replace("bi-eye-slash", "bi-eye");
   }
 });
-
-
-
-
-
-
-
-
-
-
-
-// const btnOpenSideMenu = document.querySelector('[data-bs-target="#list"]');
-// const fieldsToCreateParagraph = document.querySelectorAll(
-//   ".navbar-nav .list-group-item a"
-// );
-// const listToCreateParagraphContent = ['Home', 'Controle', 'Relatório', 'Arquivo', 'Corporação']
-
-// btnOpenSideMenu.addEventListener("click", () => {
-//   fieldsToCreateParagraph.forEach(() => {
-//     const paragraph = document.createElement("p");
-//     paragrafo.textContent = listToCreateParagraphContent;
-//     paragrafo.classList.add();
-//     fieldsToCreateParagraph.appendChild(paragraph);
-//   });
-// });

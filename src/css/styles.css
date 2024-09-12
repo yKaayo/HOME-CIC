@@ -1,12 +1,13 @@
 :root {
   /* Colors */
   --color-light: #f7f7f7;
-  --color-dark: #181818;
-  --color-dark-50: #18181850;
+  --color-dark: #222222;
+  --color-dark-50: #22222250;
   --color-primary-gray: #e6e6e6;
   --color-primary-gray-50: #e6e6e650;
   --color-secundary-gray: #f2f2f2;
   --color-primary-blue: #0063f7;
+  --color-secundary-blue: #a9dfff;
 }
 
 /* Bootstrap - Changes */
@@ -38,8 +39,21 @@ form input.w-16rem {
   max-width: 16rem;
 }
 
-/* Button Open and Close Side Menu */
+/* Side Menu */
+#list-menu li {
+  &:focus {
+    border-color: transparent;
+  }
 
+  & a:active {
+    border-color: transparent;
+  }
+
+  & a.active {
+    background-color: var(--color-primary-gray);
+  }
+
+}
 
 /* Icons */
 .bi-search {
@@ -61,5 +75,5 @@ form input.w-16rem {
 
 /* Divergência */
 .divergencia .card {
-  width: 20rem;
+  min-width: 20rem;
 }

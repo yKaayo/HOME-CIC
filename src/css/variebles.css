@@ -5,6 +5,9 @@
 .color-light {
     color: var(--color-light);
 }
+.color-dark {
+  color: var(--color-dark);
+}
 
 /* Background */
 .bg-primary-blue {
@@ -13,11 +16,11 @@
 
 /* Measures */
 .m-main {
-  margin-left: 5.64rem;
+  margin-left: 4.78rem;
 }
 
 .p-20px {
-  padding: 1.2rem;
+  padding: 1.22rem;
 }
 
 /* Button */
