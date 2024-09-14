@@ -24,19 +24,21 @@
     <link rel="stylesheet" href="./src/css/variebles.css" />
   </head>
   <body>
-    <header class="">
+    <header class="position-fixed vw-100 top-0">
       <nav class="navbar navbar-expand p-0">
         <div class="container-fluid px-3 px-md-5">
           <div class="collapse navbar-collapse">
             <button
-              class="btn btn_border-none-focus me-3 me-md-5 p-0 my-0 border-0 d-block"
+              class="btn btn_border-none-focus me-3 me-md-5 p-0 my-0 border-0 d-none d-sm-block"
               data-bs-toggle="collapse" type="button" data-bs-target="#list" role="button" aria-expanded="false" aria-controls="collapseExample" id="btn-togler"
             >
               <i class="bi bi-justify-left color-primary-blue" id="btn-togler-icon"></i>
             </button>
-            <div class="position-absolute top-100 left-0 side-menu z-1">
+
+            <!-- Sidemenu -->
+            <div class="position-fixed bottom-0 left-0 d-none d-sm-block side-menu z-1">
                 <div class="card card-body px-2 rounded-0 rounded-end h-100 bg-primary-blue">
-                  <ul class="navbar-nav list-group d-flex flex-column mb-auto gap-3" id="list-menu">
+                  <ul class="navbar-nav list-group d-flex flex-sm-column mb-sm-auto gap-3" id="list-menu">
                     <li class="list-group-item p-0 bg-transparent">
                       <a href="#" class="btn d-flex align-items-center color-light btn_border-none-focus active" role="button">
                         <i class="bi bi-house fs-2"></i>
@@ -77,6 +79,7 @@
                   </ul>
                 </div>
             </div>
+            <!-- Sidemenu - End -->
             <ul
               class="navbar-nav w-100 d-flex justify-content-between"
             >
@@ -105,7 +108,7 @@
                 <button type="button" class="btn d-flex d-sm-none me-2" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="bi bi-search"></i></button>
                 <p class="fs-5 mb-0 me-1 color-primary-blue lh-1">Olá,<br><span class="fw-bold">Nome</span></p>
 
-                <!-- Search Modal SM -->
+                <!-- Modal - Search - Small -->
                 <div class="modal fade d-sm-none" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
                   <div class="modal-dialog m-0 mt-3 mx-3">
                     <div class="modal-content">
@@ -127,6 +130,7 @@
                     </div>
                   </div>
                 </div>
+                <!-- Modal - Search - Small - End -->
                 <a
                   class="nav-link dropdown-toggle"
                   href="#"
@@ -225,20 +229,62 @@
                     </div>
                   </div>
                 </div>
+                <!-- Modal - Editar Perfil - End -->
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-    <main class="m-main">
-      <div class="m-4">
-        <h2 class="mb-3 fw-bold color-dark">Home</h2>
+    <main class="m-main mb-86px">
+      <!-- Bottom Menu -->
+      <div class="position-fixed bottom-0 left-0 vw-100 d-sm-none z-1">
+        <div class="card card-body px-2 rounded-0 rounded-end w-100 bg-primary-blue">
+          <ul class="navbar-nav list-group d-flex flex-row mb-sm-auto justify-content-between px-2 w-100" id="list-menu">
+            <li class="list-group-item p-0 bg-transparent border-0">
+              <a href="#" class="btn d-flex align-items-center color-light btn_border-none-focus active" role="button">
+                <i class="bi bi-house fs-2"></i>
+                <p class="mb-0 fs-5"></p>
+              </a>
+            </li>
+            <li class="list-group-item p-0 bg-transparent border-0">
+              <a href="#" class="btn d-flex align-items-center color-light" role="button">
+                <i class="bi bi-toggles2 fs-2"></i>
+                <p class="mb-0 fs-5"></p>
+              </a>
+            </li>
+            <li class="list-group-item p-0 bg-transparent border-0">
+              <a href="#" class="btn d-flex align-items-center color-light" role="button">
+                <i class="bi bi-file-earmark-text fs-2"></i>
+                <p class="mb-0 fs-5"></p>
+              </a>
+            </li>
+            <li class="list-group-item p-0 bg-transparent border-0">
+              <a href="#" class="btn d-flex align-items-center color-light" role="button">
+                <i class="bi bi-folder2 fs-2"></i>
+                <p class="mb-0 fs-5"></p>
+              </a>
+            </li>
+            <li class="list-group-item p-0 bg-transparent border-0">
+              <a href="#" class="btn d-flex align-items-center color-light" role="button">
+                <i class="bi bi-gear fs-2"></i>
+                <p class="mb-0 fs-5"></p>
+              </a>
+            </li>
+          </ul>
+        </div>
+    </div>
+       <!-- Bottom Menu - End -->
+
+      <div class="d-flex flex-column gap-32px m-4">
+        <h2 class="mb-1 fw-bold color-dark">Home</h2>
 
         <div class="divergencia">
           <h3 class="mb-2 color-dark">Ocorreu algo! Vamos resolver juntos?</h3>
 
           <div class="d-flex gap-4 overflow-x-auto">
+
+            <!-- Card 1 -->
             <div class="card">
               <div class="card-body p-2">
                 <div class="d-flex justify-content-between gap-3">
@@ -267,6 +313,8 @@
                   </button>
                 </div>
               </div>
+
+              <!-- Modal - Detalhes -->
               <div class="modal fade" id="atrasadoModal" tabindex="-1" aria-labelledby="atrasadoModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
@@ -281,7 +329,9 @@
                   </div>
                 </div>
               </div>
+              <!-- Modal - Detalhes - End -->
               
+              <!-- Modal - Resolver -->
               <div class="modal fade" id="resolveModal" tabindex="-1" aria-labelledby="resolveModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content p-20px">
@@ -302,6 +352,53 @@
                     </div>
                   </div>
                 </div>
+              </div>
+              <!-- Modal - Resolver - End -->
+
+            </div>
+          </div>
+        </div>
+
+        <div class="board">
+          <div class="porcent d-flex w-100">
+            <div class="item d-flex justify-content-center w-60 bg-primary-blue rounded-start py-1">
+              <p class="m-0 color-light">60%</p>
+            </div>
+            <div class="item d-flex justify-content-center w-40 bg-primary-gray rounded-end py-1">
+              <p class="m-0">40%</p>
+            </div>
+          </div>
+          <div class="porcent-text">
+            
+            <!-- Item 1 -->
+            <div class="item row d-flex justify-content-between mx-1 mt-2">
+              <div class="col-6">
+                <div class="d-flex align-items-center">
+                  <div class="circle rounded-circle bg-primary-blue"></div>
+                  <p class="mb-0 ms-1">IRRF Juros sobre o Capital Próprio</p>
+                </div>
+              </div>
+              <div class="col-3">
+                <p class="mb-0">R$ 6.000,00</p>
+              </div>
+              <div class="col-3">
+                <p class="mb-0">60%</p>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="item row d-flex justify-content-between mx-1 mt-2">
+              <div class="col-6">
+                <div class="d-flex align-items-center">
+                  <div class="circle rounded-circle bg-primary-gray"></div>
+                  <p class="mb-0 ms-1">COFINS - Mercado Interno</p>
+                </div>
+              </div>
+              <div class="col-3">
+                <p class="mb-0">R$ 4.000,00</p>
+              </div>
+              <div class="col-3">
+                <p class="mb-0">40%</p>
               </div>
             </div>
           </div>

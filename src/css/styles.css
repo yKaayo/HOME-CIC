@@ -10,27 +10,7 @@
   --color-secundary-blue: #a9dfff;
 }
 
-/* Bootstrap - Changes */
-.list-group {
-  border: none;
-}
-
-.left-0 {
-  left: 0;
-}
-
-.collapse .card .list-group {
-  border: none;
-}
-
-.collapse .card .list-group-item {
-  border: none;
-}
-
-button.btn.btn_border-none-focus:active {
-  border-color: transparent;
-}
-
+/* Header */
 header {
   background-color: var(--color-secundary-gray);
 }
@@ -73,7 +53,21 @@ form input.w-16rem {
   right: 2.22rem;
 }
 
+
+/* Main */
+@media (width > 575px) {
+  .m-main {
+    margin-left: 4.78rem;
+  }
+}
+
 /* Divergência */
 .divergencia .card {
   min-width: 20rem;
+}
+
+/* Board */
+.circle {
+  height: 1.2rem;
+  width: 1.2rem;
 }
