@@ -62,8 +62,10 @@ form input.w-16rem {
 }
 
 /* Divergência */
-.divergencia .card {
-  min-width: 20rem;
+@media (width > 575px) {
+  .divergencia .card {
+    min-width: 20rem;
+  }
 }
 
 /* Board */
