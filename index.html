@@ -282,7 +282,7 @@
         <div class="divergencia">
           <h3 class="mb-2 color-dark">Ocorreu algo! Vamos resolver juntos?</h3>
 
-          <div class="d-flex gap-4 overflow-x-auto">
+          <div class="d-none d-sm-flex gap-4 overflow-auto">
 
             <!-- Card 1 -->
             <div class="card">
@@ -357,6 +357,238 @@
 
             </div>
           </div>
+        </div>
+
+        <div id="carouselItem" class="carousel carousel-dark slide d-sm-none">
+          <div class="carousel-inner">
+            <div class="carousel-item active px-1">
+              <div class="card mx-5">
+              <div class="card-body p-2">
+                <div class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3">
+                  <p class="card-text mb-0 mb-sm-1 fw-bold">Documento</p>
+                  <p class="card-text mb-1">00.00.00000.0000000-00</p>
+                </div>
+                <div class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3">
+                  <p class="card-text mb-0 mb-sm-1 fw-bold">Tipo</p>
+                  <p class="card-text mb-1">Pagamento</p>
+                </div>
+                <div class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3">
+                  <p class="card-text mb-0 mb-sm-1 fw-bold">Status</p>
+                  <p class="card-text mb-1"></p>
+                </div>
+                <div class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3">
+                  <p class="card-text mb-0 mb-sm-1 fw-bold">Data</p>
+                  <p class="card-text mb-1">01/01/2000</p>
+                </div>
+                <div class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3">
+                  <p class="card-text mb-0 mb-sm-1 fw-bold">Valor</p>
+                  <p class="card-text mb-1">R$ 100,00</p>
+                </div>
+                <div class="d-flex justify-content-center w-100">
+                  <button type="button" class="btn btn-blue rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#atrasadoModal">
+                    Mais detalhes
+                  </button>
+                </div>
+              </div>
+
+              <!-- Modal - Detalhes -->
+              <div class="modal fade" id="atrasadoModal" tabindex="-1" aria-labelledby="atrasadoModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body d-flex flex-column align-items-center p-20px">
+                      <h2 class="text-center color-dark fw-bold fs-2">Você possui divergências a serem <span class="color-primary-blue">solucionadas</span>!</h2>
+                      <p class="text-center px-2 px-md-5">O documento de número<br><span class="fw-bold">00.00.00000.0000000-00</span> foi pago de forma indevida no dia <span class="fw-bold">01/01/2000</span><br>no valor de <span class="fw-bold">R$ 100,00</span></p>
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#resolveModal">
+                        Launch demo modal
+                      </button>
+                      <button type="button" class="btn" data-bs-dismiss="modal">Resolver depois</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal - Detalhes - End -->
+              
+              <!-- Modal - Resolver -->
+              <div class="modal fade" id="resolveModal" tabindex="-1" aria-labelledby="resolveModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content p-20px">
+                    <div class="d-flex flex-column align-items-end">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="d-flex flex-column align-items-center">
+                      <h2>Siga o <span class="color-primary-blue">passo a passo</span></h2>
+                      <ol>
+                        <li>Acesse o portal do e-CAC</li>
+                        <li>Selecione a opção "Acessar PER/DCOMP WEB"</li>
+                        <li>Selecione a opção "Pedido de Restituição"</li>
+                        <li>Preencha os dados do documento corretamente</li>
+                      </ol>
+                      <p>Não foi possível <span class="color-primary-blue">resolver</span>?</p>
+                      <p>Contatar o suporte</p>
+                      <button type="button" class="btn btn-blue" data-bs-dismiss="modal">Voltar para Home</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal - Resolver - End -->
+
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card mx-5">
+                <div class="card-body p-2">
+                  <div class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3">
+                    <p class="card-text mb-0 mb-sm-1 fw-bold">Documento</p>
+                    <p class="card-text mb-1">00.00.00000.0000000-00</p>
+                  </div>
+                  <div class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3">
+                    <p class="card-text mb-0 mb-sm-1 fw-bold">Tipo</p>
+                    <p class="card-text mb-1">Pagamento</p>
+                  </div>
+                  <div class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3">
+                    <p class="card-text mb-0 mb-sm-1 fw-bold">Status</p>
+                    <p class="card-text mb-1"></p>
+                  </div>
+                  <div class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3">
+                    <p class="card-text mb-0 mb-sm-1 fw-bold">Data</p>
+                    <p class="card-text mb-1">01/01/2000</p>
+                  </div>
+                  <div class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3">
+                    <p class="card-text mb-0 mb-sm-1 fw-bold">Valor</p>
+                    <p class="card-text mb-1">R$ 100,00</p>
+                  </div>
+                  <div class="d-flex justify-content-center w-100">
+                    <button type="button" class="btn btn-blue rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#atrasadoModal">
+                      Mais detalhes
+                    </button>
+                  </div>
+                </div>
+  
+                <!-- Modal - Detalhes -->
+                <div class="modal fade" id="atrasadoModal" tabindex="-1" aria-labelledby="atrasadoModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-body d-flex flex-column align-items-center p-20px">
+                        <h2 class="text-center color-dark fw-bold fs-2">Você possui divergências a serem <span class="color-primary-blue">solucionadas</span>!</h2>
+                        <p class="text-center px-2 px-md-5">O documento de número<br><span class="fw-bold">00.00.00000.0000000-00</span> foi pago de forma indevida no dia <span class="fw-bold">01/01/2000</span><br>no valor de <span class="fw-bold">R$ 100,00</span></p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#resolveModal">
+                          Launch demo modal
+                        </button>
+                        <button type="button" class="btn" data-bs-dismiss="modal">Resolver depois</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal - Detalhes - End -->
+                
+                <!-- Modal - Resolver -->
+                <div class="modal fade" id="resolveModal" tabindex="-1" aria-labelledby="resolveModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content p-20px">
+                      <div class="d-flex flex-column align-items-end">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="d-flex flex-column align-items-center">
+                        <h2>Siga o <span class="color-primary-blue">passo a passo</span></h2>
+                        <ol>
+                          <li>Acesse o portal do e-CAC</li>
+                          <li>Selecione a opção "Acessar PER/DCOMP WEB"</li>
+                          <li>Selecione a opção "Pedido de Restituição"</li>
+                          <li>Preencha os dados do documento corretamente</li>
+                        </ol>
+                        <p>Não foi possível <span class="color-primary-blue">resolver</span>?</p>
+                        <p>Contatar o suporte</p>
+                        <button type="button" class="btn btn-blue" data-bs-dismiss="modal">Voltar para Home</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal - Resolver - End -->
+  
+                </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card mx-5">
+                <div class="card-body p-2">
+                  <div class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3">
+                    <p class="card-text mb-0 mb-sm-1 fw-bold">Documento</p>
+                    <p class="card-text mb-1">00.00.00000.0000000-00</p>
+                  </div>
+                  <div class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3">
+                    <p class="card-text mb-0 mb-sm-1 fw-bold">Tipo</p>
+                    <p class="card-text mb-1">Pagamento</p>
+                  </div>
+                  <div class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3">
+                    <p class="card-text mb-0 mb-sm-1 fw-bold">Status</p>
+                    <p class="card-text mb-1"></p>
+                  </div>
+                  <div class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3">
+                    <p class="card-text mb-0 mb-sm-1 fw-bold">Data</p>
+                    <p class="card-text mb-1">01/01/2000</p>
+                  </div>
+                  <div class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3">
+                    <p class="card-text mb-0 mb-sm-1 fw-bold">Valor</p>
+                    <p class="card-text mb-1">R$ 100,00</p>
+                  </div>
+                  <div class="d-flex justify-content-center w-100">
+                    <button type="button" class="btn btn-blue rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#atrasadoModal">
+                      Mais detalhes
+                    </button>
+                  </div>
+                </div>
+  
+                <!-- Modal - Detalhes -->
+                <div class="modal fade" id="atrasadoModal" tabindex="-1" aria-labelledby="atrasadoModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-body d-flex flex-column align-items-center p-20px">
+                        <h2 class="text-center color-dark fw-bold fs-2">Você possui divergências a serem <span class="color-primary-blue">solucionadas</span>!</h2>
+                        <p class="text-center px-2 px-md-5">O documento de número<br><span class="fw-bold">00.00.00000.0000000-00</span> foi pago de forma indevida no dia <span class="fw-bold">01/01/2000</span><br>no valor de <span class="fw-bold">R$ 100,00</span></p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#resolveModal">
+                          Launch demo modal
+                        </button>
+                        <button type="button" class="btn" data-bs-dismiss="modal">Resolver depois</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal - Detalhes - End -->
+                
+                <!-- Modal - Resolver -->
+                <div class="modal fade" id="resolveModal" tabindex="-1" aria-labelledby="resolveModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content p-20px">
+                      <div class="d-flex flex-column align-items-end">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="d-flex flex-column align-items-center">
+                        <h2>Siga o <span class="color-primary-blue">passo a passo</span></h2>
+                        <ol>
+                          <li>Acesse o portal do e-CAC</li>
+                          <li>Selecione a opção "Acessar PER/DCOMP WEB"</li>
+                          <li>Selecione a opção "Pedido de Restituição"</li>
+                          <li>Preencha os dados do documento corretamente</li>
+                        </ol>
+                        <p>Não foi possível <span class="color-primary-blue">resolver</span>?</p>
+                        <p>Contatar o suporte</p>
+                        <button type="button" class="btn btn-blue" data-bs-dismiss="modal">Voltar para Home</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal - Resolver - End -->
+  
+                </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselItem" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselItem" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
 
         <div class="board p-3 rounded-3 bg-secundary-gray">
