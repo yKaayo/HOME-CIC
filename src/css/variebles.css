@@ -43,6 +43,10 @@ button.btn.btn_border-none-focus:active {
   background-color: var(--color-primary-gray);
 }
 
+.bg-secundary-gray {
+  background-color: var(--color-secundary-gray);
+}
+
 /* Measures */
 .w-40 {
   width: 40%;
@@ -53,8 +57,8 @@ button.btn.btn_border-none-focus:active {
 }
 
 @media (width <= 575px) {
-  .mb-90px {
-    margin-bottom: 90px;
+  .mb-100px {
+    margin-bottom: calc(86px + 24px);
   }
 }
 
@@ -112,4 +116,9 @@ form input.elevation-gray:focus {
   .bi-question-circle {
     position: absolute;
   }
+}
+
+.custom-tooltip {
+  --bs-tooltip-bg: var(--color-primary-blue);
+  --bs-tooltip-color: var(--color-light);
 }
