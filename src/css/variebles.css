@@ -31,6 +31,10 @@ button.btn.btn_border-none-focus:active {
 }
 
 /* Background */
+.bg-light {
+  background-color: var(--color-light);
+}
+
 .bg-primary-blue {
   background-color: var(--color-primary-blue);
 }
@@ -48,8 +52,10 @@ button.btn.btn_border-none-focus:active {
   width: 60%;
 }
 
-.mb-86px {
-  margin-bottom: 86px;
+@media (width <= 575px) {
+  .mb-90px {
+    margin-bottom: 90px;
+  }
 }
 
 .p-20px {
