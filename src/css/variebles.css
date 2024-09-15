@@ -39,12 +39,20 @@ button.btn.btn_border-none-focus:active {
   background-color: var(--color-primary-blue);
 }
 
+.bg-secundary-blue {
+  background-color: var(--color-secundary-blue);
+}
+
 .bg-primary-gray {
   background-color: var(--color-primary-gray);
 }
 
 .bg-secundary-gray {
   background-color: var(--color-secundary-gray);
+}
+
+.bg-red {
+  background-color: var(--color-red);
 }
 
 /* Measures */
