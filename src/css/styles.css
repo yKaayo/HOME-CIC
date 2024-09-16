@@ -37,6 +37,18 @@ form input.w-16rem {
   }
 }
 
+@media (width > 575px) {
+  .side-menu {
+    height: clamp(475px, calc(100% - 70px), calc(100dvh - 70px));
+  }
+}
+
+@media (width <= 575px) {
+  .bi-question-circle {
+    position: absolute;
+  }
+}
+
 /* Icons */
 .bi-search {
   font-size: 1.2rem;

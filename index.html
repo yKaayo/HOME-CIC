@@ -50,7 +50,7 @@
 
             <!-- Sidemenu -->
             <div
-              class="position-fixed bottom-0 left-0 d-none d-sm-block side-menu z-1"
+              class="position-fixed bottom-0 left-0 d-none d-sm-block side-menu z-1 overflow-y-auto"
             >
               <div
                 class="card card-body px-2 rounded-0 rounded-end h-100 bg-primary-blue"
@@ -163,46 +163,10 @@
                 >
                   <i class="bi bi-search"></i>
                 </button>
+
                 <p class="fs-5 mb-0 me-1 color-primary-blue lh-1">
                   Olá,<br /><span class="fw-bold">Nome</span>
                 </p>
-
-                <!-- Modal - Search - Small -->
-                <div
-                  class="modal fade d-sm-none"
-                  id="searchModal"
-                  tabindex="-1"
-                  aria-labelledby="searchModalLabel"
-                  aria-hidden="true"
-                >
-                  <div class="modal-dialog m-0 mt-3 mx-3">
-                    <div class="modal-content">
-                      <div class="modal-body p-0">
-                        <a class="nav-link w-100" href="#">
-                          <form
-                            class="input-group d-flex align-items-center w-100"
-                            role="search"
-                          >
-                            <input
-                              class="form-control rounded-start ps-3 elevation-gray"
-                              type="search"
-                              placeholder="Pesquisar"
-                              aria-label="Search"
-                            />
-                            <button
-                              class="input-group-text btn btn-outline-gray"
-                              type="submit"
-                            >
-                              <i class="bi bi-search"></i>
-                            </button>
-                          </form>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Modal - Search - Small - End -->
-
                 <a
                   class="nav-link dropdown-toggle"
                   href="#"
@@ -235,96 +199,131 @@
         </div>
       </nav>
     </header>
-
-    <!-- Modal - Editar Perfil -->
-    <div
-      class="modal fade"
-      id="modalEditProfile"
-      tabindex="-1"
-      aria-labelledby="modalLabelEditProfile"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content p-20px">
-          <div class="close d-flex justify-content-end">
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body d-flex flex-column align-items-center">
-            <h2 class="fw-bold color-primary-blue fs-2">Editar Perfil</h2>
-            <form class="w-100">
-              <div class="mb-3">
-                <label for="name" class="form-label primary-gray__color"
-                  >Nome</label
-                >
-                <input
-                  type="text"
-                  class="form-control focus-ring"
-                  id="name"
-                  placeholder="Name"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input
-                  type="email"
-                  class="form-control focus-ring pe-5"
-                  id="email"
-                  placeholder="email@email.com"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <label for="tel" class="form-label">Telefone</label>
-                <input
-                  type="tel"
-                  class="form-control focus-ring pe-5"
-                  id="tel"
-                  placeholder="(11) 912345678"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <label for="business" class="form-label">Empresa</label>
-                <input
-                  type="text"
-                  class="form-control focus-ring pe-5"
-                  id="business"
-                  placeholder="CIC"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <label for="password" class="form-label">Senha</label>
-                <input
-                  type="password"
-                  class="form-control focus-ring pe-5"
-                  id="password"
-                  placeholder="senha123"
-                  required
-                />
-                <i
-                  class="bi bi-eye position-absolute"
-                  id="eye"
-                  role="button"
-                ></i>
-              </div>
-              <div class="btn-entrar d-grid">
-                <button type="submit" class="btn btn-blue">Salvar</button>
-              </div>
-            </form>
+    <main class="m-main mb-100px mb-sm-3">
+      <!-- Modal - Editar Perfil -->
+      <div
+        class="modal fade"
+        id="modalEditProfile"
+        tabindex="-1"
+        aria-labelledby="modalLabelEditProfile"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content p-20px">
+            <div class="close d-flex justify-content-end">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body d-flex flex-column align-items-center">
+              <h2 class="fw-bold color-primary-blue fs-2">Editar Perfil</h2>
+              <form class="w-100">
+                <div class="mb-3">
+                  <label for="name" class="form-label primary-gray__color"
+                    >Nome</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control focus-ring"
+                    id="name"
+                    placeholder="Name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control focus-ring pe-5"
+                    id="email"
+                    placeholder="email@email.com"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="tel" class="form-label">Telefone</label>
+                  <input
+                    type="tel"
+                    class="form-control focus-ring pe-5"
+                    id="tel"
+                    placeholder="(11) 912345678"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="business" class="form-label">Empresa</label>
+                  <input
+                    type="text"
+                    class="form-control focus-ring pe-5"
+                    id="business"
+                    placeholder="CIC"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="password" class="form-label">Senha</label>
+                  <input
+                    type="password"
+                    class="form-control focus-ring pe-5"
+                    id="password"
+                    placeholder="senha123"
+                    required
+                  />
+                  <i
+                    class="bi bi-eye position-absolute"
+                    id="eye"
+                    role="button"
+                  ></i>
+                </div>
+                <div class="btn-entrar d-grid">
+                  <button type="submit" class="btn btn-blue">Salvar</button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Modal - Editar Perfil - End -->
+      <!-- Modal - Editar Perfil - End -->
 
-    <main class="m-main mb-100px">
+      <!-- Modal - Search - Small -->
+      <div
+        class="modal fade d-sm-none"
+        id="searchModal"
+        tabindex="-1"
+        aria-labelledby="searchModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog m-0 mt-3 mx-3">
+          <div class="modal-content">
+            <div class="modal-body p-0">
+              <a class="nav-link w-100" href="#">
+                <form
+                  class="input-group d-flex align-items-center w-100"
+                  role="search"
+                >
+                  <input
+                    class="form-control rounded-start ps-3 elevation-gray"
+                    type="search"
+                    placeholder="Pesquisar"
+                    aria-label="Search"
+                  />
+                  <button
+                    class="input-group-text btn btn-outline-gray"
+                    type="submit"
+                  >
+                    <i class="bi bi-search"></i>
+                  </button>
+                </form>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal - Search - Small - End -->
+
       <!-- Bottom Menu -->
       <div class="position-fixed bottom-0 left-0 vw-100 d-sm-none z-1">
         <div
@@ -389,12 +388,12 @@
       </div>
       <!-- Bottom Menu - End -->
 
-      <div class="d-flex flex-column gap-32px m-4">
-        <h2 class="mb-1 fw-bold color-dark">Home</h2>
+      <div class="d-flex flex-column gap-32px mt-70px mx-3 mx-sm-4">
+        <h2 class="fw-bold color-primary-blue mt-4 mb-0">Home</h2>
 
         <!-- Divergência -->
-        <div class="divergencia">
-          <h3 class="mb-2 color-dark">Ocorreu algo! Vamos resolver juntos?</h3>
+        <div class="divergencia mt-n12px">
+          <h3 class="ms-2 mb-2 color-dark">Ocorreu algo! Vamos resolver juntos?</h3>
 
           <div class="d-none d-sm-flex gap-4 overflow-auto">
             <!-- Card 1 -->
@@ -605,7 +604,106 @@
                 </div>
               </div>
             </div>
-            <div class="carousel-item px-1"></div>
+            <div class="carousel-item px-1">
+              <div class="card mx-5">
+                <div class="card-body p-2">
+                  <div
+                    class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3"
+                  >
+                    <p class="card-text mb-0 mb-sm-1 fw-bold">Documento</p>
+                    <p class="card-text mb-1">00.00.00000.0000000-00</p>
+                  </div>
+                  <div
+                    class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3"
+                  >
+                    <p class="card-text mb-0 mb-sm-1 fw-bold">Tipo</p>
+                    <p class="card-text mb-1">Pagamento</p>
+                  </div>
+                  <div
+                    class="d-flex flex-column flex-sm-row justify-content-sm-between align-items-start align-items-sm-center gap-0 gap-sm-3"
+                  >
+                    <p class="card-text mb-0 mb-sm-1 fw-bold">Status</p>
+                    <p
+                    class="card-text mb-1 bg-yellow color-dark-green py-1 px-2 rounded-4"
+                  >
+                    Vencimento próximo
+                  </p>
+                  </div>
+                  <div
+                    class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3"
+                  >
+                    <p class="card-text mb-0 mb-sm-1 fw-bold">Data</p>
+                    <p class="card-text mb-1">01/01/2000</p>
+                  </div>
+                  <div
+                    class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3"
+                  >
+                    <p class="card-text mb-0 mb-sm-1 fw-bold">Valor</p>
+                    <p class="card-text mb-1">R$ 100,00</p>
+                  </div>
+                  <div class="d-flex justify-content-center w-100">
+                    <button
+                      type="button"
+                      class="btn btn-blue rounded-pill px-4"
+                      data-bs-toggle="modal"
+                      data-bs-target="#atrasadoModal"
+                    >
+                      Mais detalhes
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item px-1">
+              <div class="card mx-5">
+                <div class="card-body p-2">
+                  <div
+                    class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3"
+                  >
+                    <p class="card-text mb-0 mb-sm-1 fw-bold">Documento</p>
+                    <p class="card-text mb-1">00.00.00000.0000000-00</p>
+                  </div>
+                  <div
+                    class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3"
+                  >
+                    <p class="card-text mb-0 mb-sm-1 fw-bold">Tipo</p>
+                    <p class="card-text mb-1">Pagamento</p>
+                  </div>
+                  <div
+                    class="d-flex flex-column flex-sm-row justify-content-sm-between align-items-start align-items-sm-center gap-0 gap-sm-3"
+                  >
+                    <p class="card-text mb-0 mb-sm-1 fw-bold">Status</p>
+                    <p
+                    class="card-text mb-1 bg-primary-blue color-light py-1 px-2 rounded-4"
+                  >
+                    Reembolso disponível
+                  </p>
+                  </div>
+                  <div
+                    class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3"
+                  >
+                    <p class="card-text mb-0 mb-sm-1 fw-bold">Data</p>
+                    <p class="card-text mb-1">01/01/2000</p>
+                  </div>
+                  <div
+                    class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3"
+                  >
+                    <p class="card-text mb-0 mb-sm-1 fw-bold">Valor</p>
+                    <p class="card-text mb-1">R$ 100,00</p>
+                  </div>
+                  <div class="d-flex justify-content-center w-100">
+                    <button
+                      type="button"
+                      class="btn btn-blue rounded-pill px-4"
+                      data-bs-toggle="modal"
+                      data-bs-target="#atrasadoModal"
+                    >
+                      Mais detalhes
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <button
             class="carousel-control-prev"
@@ -926,7 +1024,7 @@
 
         <!-- Board -->
         <div class="board p-3 rounded-3 bg-secundary-gray">
-          <div class="porcent d-flex w-100">
+          <div class="porcent d-flex mb-3 w-100">
             <div
               class="item d-flex justify-content-center w-60 bg-primary-blue rounded-start py-1"
             >

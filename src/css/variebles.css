@@ -82,6 +82,14 @@ button.btn.btn_border-none-focus:active {
   gap: 2rem;
 }
 
+.mt-70px {
+  margin-top: 70px;
+}
+
+.mt-n12px {
+  margin-top: -12px;
+}
+
 /* Button */
 .btn-blue {
   color: var(--color-light);
@@ -114,19 +122,7 @@ form input.elevation-gray:focus {
   box-shadow: 0 0 4px var(--color-dark-50);
 }
 
-/* Side Menu */
-@media (width > 575px) {
-  .side-menu {
-    height: clamp(calc(100% - 70px), calc(100dvh - 70px), calc(100dvh - 70px));
-  }
-}
-
-@media (width <= 575px) {
-  .bi-question-circle {
-    position: absolute;
-  }
-}
-
+/* Tooltips */
 .custom-tooltip {
   --bs-tooltip-bg: var(--color-primary-blue);
   --bs-tooltip-color: var(--color-light);
