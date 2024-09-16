@@ -9,7 +9,7 @@
   --color-primary-blue: #0063f7;
   --color-secundary-blue: #a9dfff;
   --color-red: #d61515;
-  --color-yellow: #DCF15B;
+  --color-yellow: #dcf15b;
   --color-dark-green: #727409;
 }
 
@@ -35,7 +35,6 @@ form input.w-16rem {
   & a.active {
     background-color: var(--color-primary-gray);
   }
-
 }
 
 /* Icons */
@@ -55,7 +54,6 @@ form input.w-16rem {
   bottom: 4.8rem;
   right: 2.22rem;
 }
-
 
 /* Main */
 @media (width > 575px) {

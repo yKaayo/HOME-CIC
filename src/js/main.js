@@ -1,16 +1,20 @@
 // Tooltips Bootstrap
-const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+const tooltipTriggerList = document.querySelectorAll(
+  '[data-bs-toggle="tooltip"]'
+);
+const tooltipList = [...tooltipTriggerList].map(
+  (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+);
 
 // Side Menu
 const btnToggler = document.querySelector("#btn-togler");
 const iconToggler = document.querySelector("#btn-togler-icon");
 
-const textToShow = document.querySelectorAll('#list-menu li a p');
+const textToShow = document.querySelectorAll("#list-menu li a p");
 
 btnToggler.addEventListener("click", () => {
-  const textList = ['Home', 'Controle', 'Relatório', 'Arquivo', 'Corporação'];
-  
+  const textList = ["Home", "Controle", "Relatório", "Arquivo", "Corporação"];
+
   if (iconToggler.classList.contains("bi-justify-left")) {
     iconToggler.classList.replace("bi-justify-left", "bi-x");
 
@@ -18,7 +22,7 @@ btnToggler.addEventListener("click", () => {
 
     for (let i = 0; i < textList.length; i++) {
       textToShow[i].textContent = textList[i];
-      textToShow[i].classList.add('ms-3');
+      textToShow[i].classList.add("ms-3");
     }
   } else {
     iconToggler.classList.replace("bi-x", "bi-justify-left");
@@ -26,23 +30,23 @@ btnToggler.addEventListener("click", () => {
     // Hide Text
     for (let i = 0; i < textList.length; i++) {
       if (textToShow[i]) {
-        textToShow[i].textContent = '';
-        textToShow[i].classList.remove('ms-3');
+        textToShow[i].textContent = "";
+        textToShow[i].classList.remove("ms-3");
       }
     }
   }
 });
 
 // List Toggle Active
-const listGroup = document.querySelectorAll('#list-menu li a');
+const listGroup = document.querySelectorAll("#list-menu li a");
 
 for (let i = 0; i < listGroup.length; i++) {
-  listGroup[i].addEventListener('click', () => {
-    listGroup.forEach(item => {
-      item.classList.remove('active');
+  listGroup[i].addEventListener("click", () => {
+    listGroup.forEach((item) => {
+      item.classList.remove("active");
     });
 
-    listGroup[i].classList.add('active');
+    listGroup[i].classList.add("active");
   });
 }
 
