@@ -21,13 +21,19 @@ button.btn.btn_border-none-focus:active {
 
 /* Color */
 .color-primary-blue {
-    color: var(--color-primary-blue);
+  color: var(--color-primary-blue);
 }
 .color-light {
-    color: var(--color-light);
+  color: var(--color-light);
 }
 .color-dark {
   color: var(--color-dark);
+}
+.color-dark-50 {
+  color: var(--color-dark-50);
+}
+.color-dark-green {
+  color: var(--color-dark-green);
 }
 
 /* Background */
@@ -55,6 +61,10 @@ button.btn.btn_border-none-focus:active {
   background-color: var(--color-red);
 }
 
+.bg-yellow {
+  background-color: var(--color-yellow);
+}
+
 /* Measures */
 .w-40 {
   width: 40%;
@@ -62,12 +72,6 @@ button.btn.btn_border-none-focus:active {
 
 .w-60 {
   width: 60%;
-}
-
-@media (width <= 575px) {
-  .mb-100px {
-    margin-bottom: calc(86px + 24px);
-  }
 }
 
 .p-20px {
@@ -83,8 +87,8 @@ button.btn.btn_border-none-focus:active {
   color: var(--color-light);
   background-color: var(--color-primary-blue);
   border: 1px var(--color-primary-blue) solid;
-  transition: .4s;
-  
+  transition: 0.4s;
+
   &:hover {
     color: var(--color-primary-blue);
     background-color: var(--color-light);
@@ -113,14 +117,11 @@ form input.elevation-gray:focus {
 /* Side Menu */
 @media (width > 575px) {
   .side-menu {
-    height: clamp(calc(100dvh - 70px), calc(100dvh - 70px), 100%);
+    height: clamp(calc(100% - 70px), calc(100dvh - 70px), calc(100dvh - 70px));
   }
 }
 
 @media (width <= 575px) {
-  .side-menu {
-  }
-
   .bi-question-circle {
     position: absolute;
   }

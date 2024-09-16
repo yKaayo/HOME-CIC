@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>CIC</title>
 
+    <!-- Browser Icon -->
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+
     <!-- Icon Bootstrap -->
     <link
       rel="stylesheet"
@@ -28,76 +31,123 @@
       <nav class="navbar navbar-expand p-0">
         <div class="container-fluid px-3 px-md-5">
           <div class="collapse navbar-collapse">
+            <!-- Button Open Side Menu -->
             <button
               class="btn btn_border-none-focus me-3 me-md-5 p-0 my-0 border-0 d-none d-sm-block"
-              data-bs-toggle="collapse" type="button" data-bs-target="#list" role="button" aria-expanded="false" aria-controls="collapseExample" id="btn-togler"
+              data-bs-toggle="collapse"
+              type="button"
+              data-bs-target="#list"
+              role="button"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+              id="btn-togler"
             >
-              <i class="bi bi-justify-left color-primary-blue" id="btn-togler-icon"></i>
+              <i
+                class="bi bi-justify-left color-primary-blue"
+                id="btn-togler-icon"
+              ></i>
             </button>
 
             <!-- Sidemenu -->
-            <div class="position-fixed bottom-0 left-0 d-none d-sm-block side-menu z-1">
-                <div class="card card-body px-2 rounded-0 rounded-end h-100 bg-primary-blue">
-                  <ul class="navbar-nav list-group d-flex flex-sm-column mb-sm-auto gap-3" id="list-menu">
-                    <li class="list-group-item p-0 bg-transparent">
-                      <a href="#" class="btn d-flex align-items-center color-light btn_border-none-focus active" role="button">
-                        <i class="bi bi-house fs-2"></i>
-                        <p class="mb-0 fs-5"></p>
-                      </a>
-                    </li>
-                    <li class="list-group-item p-0 bg-transparent">
-                      <a href="#" class="btn d-flex align-items-center color-light" role="button">
-                        <i class="bi bi-toggles2 fs-2"></i>
-                        <p class="mb-0 fs-5"></p>
-                      </a>
-                    </li>
-                    <li class="list-group-item p-0 bg-transparent">
-                      <a href="#" class="btn d-flex align-items-center color-light" role="button">
-                        <i class="bi bi-file-earmark-text fs-2"></i>
-                        <p class="mb-0 fs-5"></p>
-                      </a>
-                    </li>
-                    <li class="list-group-item p-0 bg-transparent">
-                      <a href="#" class="btn d-flex align-items-center color-light" role="button">
-                        <i class="bi bi-folder2 fs-2"></i>
-                        <p class="mb-0 fs-5"></p>
-                      </a>
-                    </li>
-                    <li class="list-group-item p-0 bg-transparent">
-                      <a href="#" class="btn d-flex align-items-center color-light" role="button">
-                        <i class="bi bi-gear fs-2"></i>
-                        <p class="mb-0 fs-5"></p>
-                      </a>
-                    </li>
-                  </ul>
-                  <ul class="list-group">
-                    <li class="list-group-item p-0 d-flex justify-content-center bg-transparent">
-                      <a href="#" class="btn color-light" role="button">
-                        <i class="bi bi-question-circle fs-2"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+            <div
+              class="position-fixed bottom-0 left-0 d-none d-sm-block side-menu z-1"
+            >
+              <div
+                class="card card-body px-2 rounded-0 rounded-end h-100 bg-primary-blue"
+              >
+                <ul
+                  class="navbar-nav list-group d-flex flex-sm-column mb-sm-auto gap-3"
+                  id="list-menu"
+                >
+                  <li class="list-group-item p-0 bg-transparent">
+                    <a
+                      href="#"
+                      class="btn d-flex align-items-center color-light btn_border-none-focus active"
+                      role="button"
+                    >
+                      <i class="bi bi-house fs-2"></i>
+                      <p class="mb-0 fs-5"></p>
+                    </a>
+                  </li>
+                  <li class="list-group-item p-0 bg-transparent">
+                    <a
+                      href="#"
+                      class="btn d-flex align-items-center color-light"
+                      role="button"
+                    >
+                      <i class="bi bi-toggles2 fs-2"></i>
+                      <p class="mb-0 fs-5"></p>
+                    </a>
+                  </li>
+                  <li class="list-group-item p-0 bg-transparent">
+                    <a
+                      href="#"
+                      class="btn d-flex align-items-center color-light"
+                      role="button"
+                    >
+                      <i class="bi bi-file-earmark-text fs-2"></i>
+                      <p class="mb-0 fs-5"></p>
+                    </a>
+                  </li>
+                  <li class="list-group-item p-0 bg-transparent">
+                    <a
+                      href="#"
+                      class="btn d-flex align-items-center color-light"
+                      role="button"
+                    >
+                      <i class="bi bi-folder2 fs-2"></i>
+                      <p class="mb-0 fs-5"></p>
+                    </a>
+                  </li>
+                  <li class="list-group-item p-0 bg-transparent">
+                    <a
+                      href="#"
+                      class="btn d-flex align-items-center color-light"
+                      role="button"
+                    >
+                      <i class="bi bi-gear fs-2"></i>
+                      <p class="mb-0 fs-5"></p>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="list-group">
+                  <li
+                    class="list-group-item p-0 d-flex justify-content-center bg-transparent"
+                  >
+                    <a href="#" class="btn color-light" role="button">
+                      <i class="bi bi-question-circle fs-2"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
             <!-- Sidemenu - End -->
-            <ul
-              class="navbar-nav w-100 d-flex justify-content-between"
-            >
+
+            <ul class="navbar-nav w-100 d-flex justify-content-between">
               <li class="nav-item d-flex align-items-center">
                 <a class="navbar-brand" href="#">
                   <img src="./src/images/logo-cic.webp" alt="" height="32" />
                 </a>
               </li>
-              <li class="nav-item d-none d-sm-flex align-items-center w-50" id="collapseExample">
+              <li
+                class="nav-item d-none d-sm-flex align-items-center w-50"
+                id="collapseExample"
+              >
                 <a class="nav-link w-100" href="#">
-                  <form class="input-group d-flex align-items-center w-100" role="search">
+                  <form
+                    class="input-group d-flex align-items-center w-100"
+                    role="search"
+                  >
                     <input
                       class="form-control rounded-start ps-3 elevation-gray"
                       type="search"
                       placeholder="Pesquisar"
                       aria-label="Search"
                     />
-                    <button class="input-group-text btn btn-outline-gray" type="submit">
+                    <button
+                      class="input-group-text btn btn-outline-gray"
+                      type="submit"
+                    >
                       <i class="bi bi-search"></i>
                     </button>
                   </form>
@@ -105,23 +155,44 @@
               </li>
               <li class="nav-item dropdown d-flex align-items-center">
                 <!-- Search Modal Button -->
-                <button type="button" class="btn d-flex d-sm-none me-2" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="bi bi-search"></i></button>
-                <p class="fs-5 mb-0 me-1 color-primary-blue lh-1">Olá,<br><span class="fw-bold">Nome</span></p>
+                <button
+                  type="button"
+                  class="btn d-flex d-sm-none me-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#searchModal"
+                >
+                  <i class="bi bi-search"></i>
+                </button>
+                <p class="fs-5 mb-0 me-1 color-primary-blue lh-1">
+                  Olá,<br /><span class="fw-bold">Nome</span>
+                </p>
 
                 <!-- Modal - Search - Small -->
-                <div class="modal fade d-sm-none" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+                <div
+                  class="modal fade d-sm-none"
+                  id="searchModal"
+                  tabindex="-1"
+                  aria-labelledby="searchModalLabel"
+                  aria-hidden="true"
+                >
                   <div class="modal-dialog m-0 mt-3 mx-3">
                     <div class="modal-content">
                       <div class="modal-body p-0">
                         <a class="nav-link w-100" href="#">
-                          <form class="input-group d-flex align-items-center w-100" role="search">
+                          <form
+                            class="input-group d-flex align-items-center w-100"
+                            role="search"
+                          >
                             <input
                               class="form-control rounded-start ps-3 elevation-gray"
                               type="search"
                               placeholder="Pesquisar"
                               aria-label="Search"
                             />
-                            <button class="input-group-text btn btn-outline-gray" type="submit">
+                            <button
+                              class="input-group-text btn btn-outline-gray"
+                              type="submit"
+                            >
                               <i class="bi bi-search"></i>
                             </button>
                           </form>
@@ -131,6 +202,7 @@
                   </div>
                 </div>
                 <!-- Modal - Search - Small - End -->
+
                 <a
                   class="nav-link dropdown-toggle"
                   href="#"
@@ -141,9 +213,21 @@
                   <i class="bi bi-person-circle my-auto"></i>
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalEditProfile" href="#"><i class="bi bi-pencil-square me-2"></i>Editar perfil</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item mx-auto" href="#"><i class="bi bi-box-arrow-left me-2"></i>Sair</a></li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modalEditProfile"
+                      href="#"
+                      ><i class="bi bi-pencil-square me-2"></i>Editar perfil</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item mx-auto" href="#"
+                      ><i class="bi bi-box-arrow-left me-2"></i>Sair</a
+                    >
+                  </li>
                 </ul>
               </li>
             </ul>
@@ -151,35 +235,41 @@
         </div>
       </nav>
     </header>
+
     <!-- Modal - Editar Perfil -->
-    <div class="modal fade" id="modalEditProfile" tabindex="-1" aria-labelledby="modalLabelEditProfile" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="modalEditProfile"
+      tabindex="-1"
+      aria-labelledby="modalLabelEditProfile"
+      aria-hidden="true"
+    >
       <div class="modal-dialog">
         <div class="modal-content p-20px">
           <div class="close d-flex justify-content-end">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
-
           <div class="modal-body d-flex flex-column align-items-center">
-          </h1>
-          <h2 class="fw-bold color-primary-blue fs-2">
-            Editar Perfil
-          </h2>
-          <form class="w-100">
-            <div class="mb-3">
-              <label
-                for="name"
-                class="form-label primary-gray__color"
-                >Nome</label
-              >
-              <input
-                type="text"
-                class="form-control focus-ring"
-                id="name"
-                placeholder="Name"
-                required
-              />
-            </div>
-            <div class="mb-3">
+            <h2 class="fw-bold color-primary-blue fs-2">Editar Perfil</h2>
+            <form class="w-100">
+              <div class="mb-3">
+                <label for="name" class="form-label primary-gray__color"
+                  >Nome</label
+                >
+                <input
+                  type="text"
+                  class="form-control focus-ring"
+                  id="name"
+                  placeholder="Name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
                 <input
                   type="email"
@@ -188,8 +278,8 @@
                   placeholder="email@email.com"
                   required
                 />
-            </div>
-            <div class="mb-3">
+              </div>
+              <div class="mb-3">
                 <label for="tel" class="form-label">Telefone</label>
                 <input
                   type="tel"
@@ -198,8 +288,8 @@
                   placeholder="(11) 912345678"
                   required
                 />
-            </div>
-            <div class="mb-3">
+              </div>
+              <div class="mb-3">
                 <label for="business" class="form-label">Empresa</label>
                 <input
                   type="text"
@@ -208,12 +298,12 @@
                   placeholder="CIC"
                   required
                 />
-            </div>
-            <div class="mb-3">
-              <label for="password" class="form-label">Senha</label>
-              <input
-                type="password"
-                class="form-control focus-ring pe-5"
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Senha</label>
+                <input
+                  type="password"
+                  class="form-control focus-ring pe-5"
                   id="password"
                   placeholder="senha123"
                   required
@@ -223,49 +313,73 @@
                   id="eye"
                   role="button"
                 ></i>
-            </div>
-            <div class="btn-entrar d-grid">
-              <button type="submit" class="btn btn-blue">
-                Salvar
-              </button>
-            </div>
-          </form>
+              </div>
+              <div class="btn-entrar d-grid">
+                <button type="submit" class="btn btn-blue">Salvar</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
     <!-- Modal - Editar Perfil - End -->
+
     <main class="m-main mb-100px">
       <!-- Bottom Menu -->
       <div class="position-fixed bottom-0 left-0 vw-100 d-sm-none z-1">
-        <div class="card card-body px-2 rounded-0 rounded-top w-100 bg-primary-blue">
-          <ul class="navbar-nav list-group d-flex flex-row mb-sm-auto justify-content-between px-2 w-100" id="list-menu">
+        <div
+          class="card card-body px-2 rounded-0 rounded-top w-100 bg-primary-blue"
+        >
+          <ul
+            class="navbar-nav list-group d-flex flex-row mb-sm-auto justify-content-between px-2 w-100"
+            id="list-menu"
+          >
             <li class="list-group-item p-0 bg-transparent border-0">
-              <a href="#" class="btn d-flex align-items-center color-light btn_border-none-focus active" role="button">
+              <a
+                href="#"
+                class="btn d-flex align-items-center color-light btn_border-none-focus active"
+                role="button"
+              >
                 <i class="bi bi-house fs-2"></i>
                 <p class="mb-0 fs-5"></p>
               </a>
             </li>
             <li class="list-group-item p-0 bg-transparent border-0">
-              <a href="#" class="btn d-flex align-items-center color-light" role="button">
+              <a
+                href="#"
+                class="btn d-flex align-items-center color-light"
+                role="button"
+              >
                 <i class="bi bi-toggles2 fs-2"></i>
                 <p class="mb-0 fs-5"></p>
               </a>
             </li>
             <li class="list-group-item p-0 bg-transparent border-0">
-              <a href="#" class="btn d-flex align-items-center color-light" role="button">
+              <a
+                href="#"
+                class="btn d-flex align-items-center color-light"
+                role="button"
+              >
                 <i class="bi bi-file-earmark-text fs-2"></i>
                 <p class="mb-0 fs-5"></p>
               </a>
             </li>
             <li class="list-group-item p-0 bg-transparent border-0">
-              <a href="#" class="btn d-flex align-items-center color-light" role="button">
+              <a
+                href="#"
+                class="btn d-flex align-items-center color-light"
+                role="button"
+              >
                 <i class="bi bi-folder2 fs-2"></i>
                 <p class="mb-0 fs-5"></p>
               </a>
             </li>
             <li class="list-group-item p-0 bg-transparent border-0">
-              <a href="#" class="btn d-flex align-items-center color-light" role="button">
+              <a
+                href="#"
+                class="btn d-flex align-items-center color-light"
+                role="button"
+              >
                 <i class="bi bi-gear fs-2"></i>
                 <p class="mb-0 fs-5"></p>
               </a>
@@ -282,188 +396,547 @@
           <h3 class="mb-2 color-dark">Ocorreu algo! Vamos resolver juntos?</h3>
 
           <div class="d-none d-sm-flex gap-4 overflow-auto">
-
             <!-- Card 1 -->
             <div class="card">
               <div class="card-body p-2">
-                <div class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3">
+                <div
+                  class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3"
+                >
                   <p class="card-text mb-0 mb-sm-1 fw-bold">Documento</p>
                   <p class="card-text mb-1">00.00.00000.0000000-00</p>
                 </div>
-                <div class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3">
+                <div
+                  class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3"
+                >
                   <p class="card-text mb-0 mb-sm-1 fw-bold">Tipo</p>
                   <p class="card-text mb-1">Pagamento</p>
                 </div>
-                <div class="d-flex flex-column flex-sm-row justify-content-sm-between align-items-center gap-0 gap-sm-3">
+                <div
+                  class="d-flex flex-column flex-sm-row justify-content-sm-between align-items-center gap-0 gap-sm-3"
+                >
                   <p class="card-text mb-0 mb-sm-1 fw-bold">Status</p>
-                  <p class="card-text mb-1 bg-red color-light py-1 px-2 rounded-4">Atrasado</p>
+                  <p
+                    class="card-text mb-1 bg-red color-light py-1 px-2 rounded-4"
+                  >
+                    Atrasado
+                  </p>
                 </div>
-                <div class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3">
+                <div
+                  class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3"
+                >
                   <p class="card-text mb-0 mb-sm-1 fw-bold">Data</p>
                   <p class="card-text mb-1">01/01/2000</p>
                 </div>
-                <div class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3">
+                <div
+                  class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3"
+                >
                   <p class="card-text mb-0 mb-sm-1 fw-bold">Valor</p>
                   <p class="card-text mb-1">R$ 100,00</p>
                 </div>
                 <div class="d-flex justify-content-center w-100">
-                  <button type="button" class="btn btn-blue rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#atrasadoModal">
+                  <button
+                    type="button"
+                    class="btn btn-blue rounded-pill px-4"
+                    data-bs-toggle="modal"
+                    data-bs-target="#atrasadoModal"
+                  >
                     Mais detalhes
                   </button>
                 </div>
               </div>
+            </div>
 
-              <!-- Modal - Detalhes -->
-              <div class="modal fade" id="atrasadoModal" tabindex="-1" aria-labelledby="atrasadoModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-body d-flex flex-column align-items-center p-20px">
-                      <h2 class="text-center color-dark fw-bold fs-2">Você possui divergências a serem <span class="color-primary-blue">solucionadas</span>!</h2>
-                      <p class="text-center px-2 px-md-5 mt-3">O documento de número<br><span class="fw-bold">00.00.00000.0000000-00</span> foi pago de forma indevida no dia <span class="fw-bold">01/01/2000</span><br>no valor de <span class="fw-bold">R$ 100,00</span></p>
-                      <div class="box bg-secundary-blue color-primary-blue rounded-2 w-75 text-center">
-                        <p class="m-0 p-2 fs-5">Mas ainda dá tempo de solucionar, estou aqui para te ajudar!</p>
-                      </div>
-                      <button type="button" class="btn btn-primary fs-5 rounded-5 px-4 mt-3" data-bs-toggle="modal" data-bs-target="#resolveModal">
-                        Resolver agora
-                      </button>
-                      <button type="button" class="btn btn-outline-gray mt-3" data-bs-dismiss="modal">Resolver depois</button>
-                    </div>
-                  </div>
+            <!-- Card 2 -->
+            <div class="card">
+              <div class="card-body p-2">
+                <div
+                  class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3"
+                >
+                  <p class="card-text mb-0 mb-sm-1 fw-bold">Documento</p>
+                  <p class="card-text mb-1">00.00.00000.0000000-00</p>
+                </div>
+                <div
+                  class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3"
+                >
+                  <p class="card-text mb-0 mb-sm-1 fw-bold">Tipo</p>
+                  <p class="card-text mb-1">Pagamento</p>
+                </div>
+                <div
+                  class="d-flex flex-column flex-sm-row justify-content-sm-between align-items-center gap-0 gap-sm-3"
+                >
+                  <p class="card-text mb-0 mb-sm-1 fw-bold">Status</p>
+                  <p
+                    class="card-text mb-1 bg-yellow color-dark-green py-1 px-2 rounded-4"
+                  >
+                    Vencimento próximo
+                  </p>
+                </div>
+                <div
+                  class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3"
+                >
+                  <p class="card-text mb-0 mb-sm-1 fw-bold">Data</p>
+                  <p class="card-text mb-1">01/01/2000</p>
+                </div>
+                <div
+                  class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3"
+                >
+                  <p class="card-text mb-0 mb-sm-1 fw-bold">Valor</p>
+                  <p class="card-text mb-1">R$ 100,00</p>
+                </div>
+                <div class="d-flex justify-content-center w-100">
+                  <button
+                    type="button"
+                    class="btn btn-blue rounded-pill px-4"
+                    data-bs-toggle="modal"
+                    data-bs-target="#atrasadoModal"
+                  >
+                    Mais detalhes
+                  </button>
                 </div>
               </div>
-              <!-- Modal - Detalhes - End -->
-              
-              <!-- Modal - Resolver -->
-              <div class="modal fade" id="resolveModal" tabindex="-1" aria-labelledby="resolveModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content p-20px">
-                    <div class="d-flex flex-column align-items-end">
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="d-flex flex-column align-items-center">
-                      <h2>Siga o <span class="color-primary-blue">passo a passo</span></h2>
-                      <ol class="mt-3">
-                        <li class="mb-2">Acesse o portal do <a href="#">e-CAC</a></li>
-                        <li class="mb-2">Selecione a opção "Acessar PER/DCOMP WEB"</li>
-                        <li class="mb-2">Selecione a opção "Pedido de Restituição"</li>
-                        <li>Preencha os dados do documento corretamente</li>
-                      </ol>
-                      <h3 class="mt-3 mb-0">Não foi possível <span class="color-primary-blue">resolver</span>?</h3>
-                      <a href="" class="btn color-primary-blue p-0">Contatar o suporte</a>
-                      <button type="button" class="btn btn-blue mt-3 rounded-5" data-bs-dismiss="modal">Voltar para Home</button>
-                    </div>
-                  </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+              <div class="card-body p-2">
+                <div
+                  class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3"
+                >
+                  <p class="card-text mb-0 mb-sm-1 fw-bold">Documento</p>
+                  <p class="card-text mb-1">00.00.00000.0000000-00</p>
+                </div>
+                <div
+                  class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3"
+                >
+                  <p class="card-text mb-0 mb-sm-1 fw-bold">Tipo</p>
+                  <p class="card-text mb-1">Pagamento</p>
+                </div>
+                <div
+                  class="d-flex flex-column flex-sm-row justify-content-sm-between align-items-center gap-0 gap-sm-3"
+                >
+                  <p class="card-text mb-0 mb-sm-1 fw-bold">Status</p>
+                  <p
+                    class="card-text mb-1 bg-primary-blue color-light py-1 px-2 rounded-4"
+                  >
+                    Reembolso disponível
+                  </p>
+                </div>
+                <div
+                  class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3"
+                >
+                  <p class="card-text mb-0 mb-sm-1 fw-bold">Data</p>
+                  <p class="card-text mb-1">01/01/2000</p>
+                </div>
+                <div
+                  class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3"
+                >
+                  <p class="card-text mb-0 mb-sm-1 fw-bold">Valor</p>
+                  <p class="card-text mb-1">R$ 100,00</p>
+                </div>
+                <div class="d-flex justify-content-center w-100">
+                  <button
+                    type="button"
+                    class="btn btn-blue rounded-pill px-4"
+                    data-bs-toggle="modal"
+                    data-bs-target="#atrasadoModal"
+                  >
+                    Mais detalhes
+                  </button>
                 </div>
               </div>
-              <!-- Modal - Resolver - End -->
-
             </div>
           </div>
         </div>
 
-        <div id="carouselItem" class="carousel carousel-dark slide d-sm-none">
+        <!-- Carousel -->
+        <div
+          id="carouselItem"
+          class="carousel carousel-dark slide d-sm-none z-0"
+        >
           <div class="carousel-inner">
             <div class="carousel-item active px-1">
               <div class="card mx-5">
                 <div class="card-body p-2">
-                  <div class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3">
+                  <div
+                    class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3"
+                  >
                     <p class="card-text mb-0 mb-sm-1 fw-bold">Documento</p>
                     <p class="card-text mb-1">00.00.00000.0000000-00</p>
                   </div>
-                  <div class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3">
+                  <div
+                    class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3"
+                  >
                     <p class="card-text mb-0 mb-sm-1 fw-bold">Tipo</p>
                     <p class="card-text mb-1">Pagamento</p>
                   </div>
-                  <div class="d-flex flex-column flex-sm-row justify-content-sm-between align-items-start align-items-sm-center gap-0 gap-sm-3">
+                  <div
+                    class="d-flex flex-column flex-sm-row justify-content-sm-between align-items-start align-items-sm-center gap-0 gap-sm-3"
+                  >
                     <p class="card-text mb-0 mb-sm-1 fw-bold">Status</p>
-                    <p class="card-text mb-1 bg-red color-light py-1 px-2 rounded-4">Atrasado</p>
+                    <p
+                      class="card-text mb-1 bg-red color-light py-1 px-2 rounded-4"
+                    >
+                      Atrasado
+                    </p>
                   </div>
-                  <div class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3">
+                  <div
+                    class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3"
+                  >
                     <p class="card-text mb-0 mb-sm-1 fw-bold">Data</p>
                     <p class="card-text mb-1">01/01/2000</p>
                   </div>
-                  <div class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3">
+                  <div
+                    class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3"
+                  >
                     <p class="card-text mb-0 mb-sm-1 fw-bold">Valor</p>
                     <p class="card-text mb-1">R$ 100,00</p>
                   </div>
                   <div class="d-flex justify-content-center w-100">
-                    <button type="button" class="btn btn-blue rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#atrasadoModal">
+                    <button
+                      type="button"
+                      class="btn btn-blue rounded-pill px-4"
+                      data-bs-toggle="modal"
+                      data-bs-target="#atrasadoModal"
+                    >
                       Mais detalhes
                     </button>
                   </div>
                 </div>
-  
-                <!-- Modal - Detalhes -->
-                <div class="modal fade" id="atrasadoModal" tabindex="-1" aria-labelledby="atrasadoModalLabel" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-body d-flex flex-column align-items-center p-20px">
-                        <h2 class="text-center color-dark fw-bold fs-2">Você possui divergências a serem <span class="color-primary-blue">solucionadas</span>!</h2>
-                        <p class="text-center px-2 px-md-5 mt-3">O documento de número<br><span class="fw-bold">00.00.00000.0000000-00</span> foi pago de forma indevida no dia <span class="fw-bold">01/01/2000</span><br>no valor de <span class="fw-bold">R$ 100,00</span></p>
-                        <div class="box bg-secundary-blue color-primary-blue rounded-2 w-75 text-center">
-                          <p class="m-0 p-2 fs-5">Mas ainda dá tempo de solucionar, estou aqui para te ajudar!</p>
-                        </div>
-                        <button type="button" class="btn btn-primary fs-5 rounded-5 px-4 mt-3" data-bs-toggle="modal" data-bs-target="#resolveModal">
-                          Resolver agora
-                        </button>
-                        <button type="button" class="btn btn-outline-gray mt-3" data-bs-dismiss="modal">Resolver depois</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Modal - Detalhes - End -->
-                
-                <!-- Modal - Resolver -->
-                <div class="modal fade" id="resolveModal" tabindex="-1" aria-labelledby="resolveModalLabel" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content p-20px">
-                      <div class="d-flex flex-column align-items-end">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="d-flex flex-column align-items-center">
-                        <h2>Siga o <span class="color-primary-blue">passo a passo</span></h2>
-                        <ol class="mt-3">
-                          <li class="mb-2">Acesse o portal do <a href="#">e-CAC</a></li>
-                          <li class="mb-2">Selecione a opção "Acessar PER/DCOMP WEB"</li>
-                          <li class="mb-2">Selecione a opção "Pedido de Restituição"</li>
-                          <li>Preencha os dados do documento corretamente</li>
-                        </ol>
-                        <h3 class="mt-3 mb-0">Não foi possível <span class="color-primary-blue">resolver</span>?</h3>
-                        <a href="" class="btn color-primary-blue p-0">Contatar o suporte</a>
-                        <button type="button" class="btn btn-blue mt-3 rounded-5" data-bs-dismiss="modal">Voltar para Home</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Modal - Resolver - End -->
-  
               </div>
             </div>
-            <div class="carousel-item px-1">
-
-            </div>
+            <div class="carousel-item px-1"></div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselItem" data-bs-slide="prev">
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselItem"
+            data-bs-slide="prev"
+          >
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselItem" data-bs-slide="next">
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselItem"
+            data-bs-slide="next"
+          >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
         </div>
+        <!-- Carousel - item -->
 
+        <!-- Modal - Detalhes -->
+        <div
+          class="modal fade"
+          id="atrasadoModal"
+          tabindex="-1"
+          aria-labelledby="atrasadoModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div
+                class="modal-body d-flex flex-column align-items-center p-20px"
+              >
+                <h2 class="text-center color-dark fw-bold fs-2">
+                  Você possui divergências a serem
+                  <span class="color-primary-blue">solucionadas</span>!
+                </h2>
+                <p class="text-center px-2 px-md-5 mt-3">
+                  O documento de número<br /><span class="fw-bold"
+                    >00.00.00000.0000000-00</span
+                  >
+                  foi pago de forma indevida no dia
+                  <span class="fw-bold">01/01/2000</span><br />no valor de
+                  <span class="fw-bold">R$ 100,00</span>
+                </p>
+                <div
+                  class="box bg-secundary-blue color-primary-blue rounded-2 w-75 text-center"
+                >
+                  <p class="m-0 p-2 fs-5">
+                    Mas ainda dá tempo de solucionar, estou aqui para te ajudar!
+                  </p>
+                </div>
+                <button
+                  type="button"
+                  class="btn btn-primary fs-5 rounded-5 px-4 mt-3"
+                  data-bs-toggle="modal"
+                  data-bs-target="#resolveModal"
+                >
+                  Resolver agora
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-gray mt-3"
+                  data-bs-dismiss="modal"
+                >
+                  Resolver depois
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal - Detalhes - End -->
+
+        <!-- Modal - Resolver -->
+        <div
+          class="modal fade"
+          id="resolveModal"
+          tabindex="-1"
+          aria-labelledby="resolveModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content p-20px">
+              <div class="d-flex flex-column align-items-end">
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="d-flex flex-column align-items-center">
+                <h2>
+                  Siga o <span class="color-primary-blue">passo a passo</span>
+                </h2>
+                <ol class="mt-3">
+                  <li class="mb-2">Acesse o portal do <a href="#">e-CAC</a></li>
+                  <li class="mb-2">
+                    Selecione a opção "Acessar PER/DCOMP WEB"
+                  </li>
+                  <li class="mb-2">
+                    Selecione a opção "Pedido de Restituição"
+                  </li>
+                  <li>Preencha os dados do documento corretamente</li>
+                </ol>
+                <h3 class="mt-3 mb-0">
+                  Não foi possível
+                  <span class="color-primary-blue">resolver</span>?
+                </h3>
+                <a href="" class="btn color-primary-blue p-0"
+                  >Contatar o suporte</a
+                >
+                <button
+                  type="button"
+                  class="btn btn-blue mt-3 rounded-5"
+                  data-bs-dismiss="modal"
+                >
+                  Voltar para Home
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal - Resolver - End -->
+
+        <!-- Informations -->
+        <div class="d-flex flex-column gap-2 overflow-x-auto">
+          <!-- Row 1 -->
+          <div class="d-flex justify-content-between gap-4">
+            <!-- Card 1 -->
+            <div class="card information-card rounded-start-0">
+              <div class="card-body d-flex p-0">
+                <div class="bg-primary-blue"></div>
+                <div class="text p-2 me-auto">
+                  <h5 class="card-title color-primary-blue">0</h5>
+                  <p class="card-text">Processo Administrativo</p>
+                </div>
+                <i
+                  class="bi bi-info-circle pt-2 pe-2"
+                  data-bs-toggle="tooltip"
+                  data-bs-title="Quantidade de processos administrativos de crédito registrados"
+                ></i>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card information-card rounded-start-0">
+              <div class="card-body d-flex p-0">
+                <div class="bg-primary-blue"></div>
+                <div class="text p-2 me-auto">
+                  <h5 class="card-title color-primary-blue">2</h5>
+                  <p class="card-text">Pedidos de Crédito</p>
+                </div>
+                <i
+                  class="bi bi-info-circle pt-2 pe-2"
+                  data-bs-toggle="tooltip"
+                  data-bs-title="Quantidade de pedidos de restituição/ressarcimento de crédito registrados"
+                ></i>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card information-card rounded-start-0">
+              <div class="card-body d-flex p-0">
+                <div class="bg-primary-blue"></div>
+                <div class="text p-2 me-auto">
+                  <h5 class="card-title color-primary-blue">0</h5>
+                  <p class="card-text">Declaração de Compensação</p>
+                </div>
+                <i
+                  class="bi bi-info-circle pt-2 pe-2"
+                  data-bs-toggle="tooltip"
+                  data-bs-title="Quantidade de declarações de compensação registrados"
+                ></i>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card information-card rounded-start-0">
+              <div class="card-body d-flex p-0">
+                <div class="bg-primary-blue"></div>
+                <div class="text p-2 me-auto">
+                  <h5 class="card-title color-dark-50 fs-6">
+                    R$ <span class="color-primary-blue fs-5">0</span>
+                  </h5>
+                  <p class="card-text">Valor de Reserva</p>
+                </div>
+                <i
+                  class="bi bi-info-circle pt-2 pe-2"
+                  data-bs-toggle="tooltip"
+                  data-bs-title="Valores de reserva de crédito por tipo: Reserva Transitória, Dedução de Crédito, Mandado de Segurança, Recuperação Rápida
+                 "
+                ></i>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="card information-card rounded-start-0">
+              <div class="card-body d-flex p-0">
+                <div class="bg-primary-blue"></div>
+                <div class="text p-2 me-auto">
+                  <h5 class="card-title color-dark-50 fs-6">
+                    R$ <span class="color-primary-blue fs-5">0</span>
+                  </h5>
+                  <p class="card-text">Liquidação de Crédito</p>
+                </div>
+                <i
+                  class="bi bi-info-circle pt-2 pe-2"
+                  data-bs-toggle="tooltip"
+                  data-bs-title="Detalhe do valor do pagamento de ressarcimento e restituição"
+                ></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Row 2 -->
+          <div class="d-flex justify-content-between gap-4">
+            <!-- Card 1 -->
+            <div class="card information-card rounded-start-0">
+              <div class="card-body d-flex p-0">
+                <div class="bg-primary-blue"></div>
+                <div class="text p-2 me-auto">
+                  <h5 class="card-title color-dark-50 fs-6">
+                    R$ <span class="color-primary-blue fs-5">0</span> mil
+                  </h5>
+                  <p class="card-text">Crédito Original Inicial</p>
+                </div>
+                <i
+                  class="bi bi-info-circle pt-2 pe-2"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="bottom"
+                  data-bs-title="Valor disponível de saldo de crédito em valor original"
+                ></i>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card information-card rounded-start-0">
+              <div class="card-body d-flex p-0">
+                <div class="bg-primary-blue"></div>
+                <div class="text p-2 me-auto">
+                  <h5 class="card-title color-dark-50 fs-6">
+                    R$ <span class="color-primary-blue fs-5">0</span>
+                  </h5>
+                  <p class="card-text">Crédito Original Utilizado</p>
+                </div>
+                <i
+                  class="bi bi-info-circle pt-2 pe-2"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="bottom"
+                  data-bs-title="Valor de crédito original utilizado para a compensação de débitos"
+                ></i>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card information-card rounded-start-0 z-3">
+              <div class="card-body d-flex p-0">
+                <div class="bg-primary-blue"></div>
+                <div class="text p-2 me-auto">
+                  <h5 class="card-title color-dark-50 fs-6">
+                    R$ <span class="color-primary-blue fs-5">0</span>
+                  </h5>
+                  <p class="card-text">Débitos Compensados</p>
+                </div>
+                <i
+                  class="bi bi-info-circle pt-2 pe-2"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="bottom"
+                  data-bs-title="Valor de débitos compensados"
+                ></i>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card information-card rounded-start-0">
+              <div class="card-body d-flex p-0">
+                <div class="bg-primary-blue"></div>
+                <div class="text p-2 me-auto">
+                  <h5 class="card-title color-dark-50 fs-6">
+                    R$ <span class="color-primary-blue fs-5">11,0</span> mil
+                  </h5>
+                  <p class="card-text">Saldo de Crédito Original</p>
+                </div>
+                <i
+                  class="bi bi-info-circle pt-2 pe-2"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="bottom"
+                  data-bs-title="Valor disponível de saldo de crédito em valor original"
+                ></i>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="card information-card rounded-start-0">
+              <div class="card-body d-flex p-0">
+                <div class="bg-primary-blue"></div>
+                <div class="text p-2 me-auto">
+                  <h5 class="card-title color-dark-50 fs-6">
+                    R$ <span class="color-primary-blue fs-5">11,0</span> mil
+                  </h5>
+                  <p class="card-text">Saldo de Crédito Atualizado</p>
+                </div>
+                <i
+                  class="bi bi-info-circle pt-2 pe-2"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="bottom"
+                  data-bs-title="Valor de saldo do crédito disponível"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Informations - End -->
+
+        <!-- Board -->
         <div class="board p-3 rounded-3 bg-secundary-gray">
           <div class="porcent d-flex w-100">
-            <div class="item d-flex justify-content-center w-60 bg-primary-blue rounded-start py-1">
+            <div
+              class="item d-flex justify-content-center w-60 bg-primary-blue rounded-start py-1"
+            >
               <p class="m-0 color-light">60%</p>
             </div>
-            <div class="item d-flex justify-content-center w-40 bg-light rounded-end py-1">
+            <div
+              class="item d-flex justify-content-center w-40 bg-secundary-blue rounded-end py-1"
+            >
               <p class="m-0">40%</p>
             </div>
           </div>
           <div class="porcent-text px-2">
-            
             <!-- Item 1 -->
             <div class="item row mt-2">
               <div class="col-10 col-sm-8 col-md-6 px-1">
@@ -473,14 +946,27 @@
                 </div>
               </div>
               <div class="col-1 col-sm-3 col-md-5 px-1">
-                <div class="d-none d-sm-flex justify-content-center align-items-center h-100">
+                <div
+                  class="d-none d-sm-flex justify-content-center align-items-center h-100"
+                >
                   <p class="mb-0">R$ 6.000,00</p>
                 </div>
               </div>
               <div class="col-1 px-1">
-                <div class="d-flex justify-content-end align-items-center h-100">
+                <div
+                  class="d-flex justify-content-end align-items-center h-100"
+                >
                   <p class="d-none d-sm-flex mb-0">60%</p>
-                  <button type="button" class="btn d-sm-none" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-title="R$6.000,00 - 60%"><i class="bi bi-plus-lg"></i></button>             
+                  <button
+                    type="button"
+                    class="btn d-sm-none"
+                    data-bs-placement="top"
+                    data-bs-custom-class="custom-tooltip"
+                    data-bs-toggle="tooltip"
+                    data-bs-title="R$6.000,00 - 60%"
+                  >
+                    <i class="bi bi-plus-lg"></i>
+                  </button>
                 </div>
               </div>
             </div>
@@ -489,24 +975,38 @@
             <div class="item row mt-0 mt-sm-2">
               <div class="col-10 col-sm-8 col-md-6 px-1">
                 <div class="d-flex align-items-center">
-                  <div class="circle rounded-circle bg-light"></div>
+                  <div class="circle rounded-circle bg-secundary-blue"></div>
                   <p class="mb-0 ms-1">COFINS - Mercado Interno</p>
                 </div>
               </div>
               <div class="col-1 col-sm-3 col-md-5 px-1">
-                <div class="d-none d-sm-flex justify-content-center align-items-center h-100">
+                <div
+                  class="d-none d-sm-flex justify-content-center align-items-center h-100"
+                >
                   <p class="mb-0">R$ 4.000,00</p>
                 </div>
               </div>
               <div class="col-1 px-1">
-                <div class="d-flex justify-content-end align-items-center h-100">
+                <div
+                  class="d-flex justify-content-end align-items-center h-100"
+                >
                   <p class="d-none d-sm-flex mb-0">40%</p>
-                  <button type="button" class="btn d-sm-none" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-title="R$4.000,00 - 40%"><i class="bi bi-plus-lg"></i></button>  
+                  <button
+                    type="button"
+                    class="btn d-sm-none"
+                    data-bs-placement="top"
+                    data-bs-custom-class="custom-tooltip"
+                    data-bs-toggle="tooltip"
+                    data-bs-title="R$4.000,00 - 40%"
+                  >
+                    <i class="bi bi-plus-lg"></i>
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <!-- Board - End -->
       </div>
     </main>
 
@@ -518,6 +1018,6 @@
     ></script>
 
     <!-- JS -->
-     <script src="./src/js/main.js"></script>
+    <script src="./src/js/main.js"></script>
   </body>
 </html>

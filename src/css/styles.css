@@ -9,6 +9,8 @@
   --color-primary-blue: #0063f7;
   --color-secundary-blue: #a9dfff;
   --color-red: #d61515;
+  --color-yellow: #DCF15B;
+  --color-dark-green: #727409;
 }
 
 /* Header */
@@ -62,10 +64,27 @@ form input.w-16rem {
   }
 }
 
+@media (width <= 575px) {
+  .mb-100px {
+    margin-bottom: calc(86px + 24px);
+  }
+}
+
 /* Divergência */
 @media (width > 575px) {
   .divergencia .card {
     min-width: 20rem;
+  }
+}
+
+/* Information */
+.information-card {
+  min-width: 262px;
+  max-width: 320px;
+
+  & .bg-primary-blue {
+    height: auto;
+    min-width: 16px;
   }
 }
 
