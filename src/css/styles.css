@@ -13,39 +13,16 @@
   --color-dark-green: #727409;
 }
 
-/* Header */
-header {
-  background-color: var(--color-secundary-gray);
-}
-
-form input.w-16rem {
-  max-width: 16rem;
-}
-
 /* Side Menu */
 #list-menu li {
   &:focus {
     border-color: transparent;
   }
 
-  & a:active {
-    border-color: transparent;
-  }
-
   & a.active {
-    background-color: var(--color-primary-gray);
-  }
-}
-
-@media (width > 575px) {
-  .side-menu {
-    height: clamp(475px, calc(100% - 70px), calc(100dvh - 70px));
-  }
-}
-
-@media (width <= 575px) {
-  .bi-question-circle {
-    position: absolute;
+    color: var(--color-primary-blue);
+    background-color: var(--color-secundary-gray);
+    border-color: transparent;
   }
 }
 
@@ -61,30 +38,21 @@ form input.w-16rem {
 }
 
 /* Edit Profile */
+.modal-body .circle {
+  height: clamp(4rem, 4.4rem, 5rem);
+  width: clamp(4rem, 4.4rem, 5rem);
+}
+
 /* Eye - Show and Hide */
 #eye {
   bottom: 4.8rem;
   right: 2.22rem;
 }
 
-/* Main */
-@media (width > 575px) {
-  .m-main {
-    margin-left: 4.78rem;
-  }
-}
-
-@media (width <= 575px) {
-  .mb-100px {
-    margin-bottom: calc(86px + 24px);
-  }
-}
-
-/* Divergência */
-@media (width > 575px) {
-  .divergencia .card {
-    min-width: 20rem;
-  }
+/* Bottom Menu */
+.bottom-menu .bi-question-circle {
+  bottom: 6rem;
+  right: 1rem;
 }
 
 /* Information */
@@ -96,6 +64,11 @@ form input.w-16rem {
     height: auto;
     min-width: 16px;
   }
+}
+
+.custom-tooltip {
+  --bs-tooltip-bg: var(--color-primary-blue);
+  --bs-tooltip-color: var(--color-light);
 }
 
 /* Board */
