@@ -12,6 +12,14 @@
       type="image/x-icon"
     />
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Icon Bootstrap -->
     <link
       rel="stylesheet"
@@ -266,9 +274,7 @@
       <!-- Modal - Search - Small - End -->
 
       <!-- Sidemenu -->
-      <div
-        class="position-fixed left-0 d-none d-sm-block side-menu z-1"
-      >
+      <div class="position-fixed left-0 d-none d-sm-block side-menu z-1">
         <div
           class="card card-body px-1 rounded-0 rounded-end gap-4 h-100 bg-primary-blue"
         >
@@ -327,11 +333,11 @@
               </a>
             </li>
           </ul>
-          <ul class="list-group border-0">
+          <ul class="list-group border-0" >
             <li
               class="list-group-item p-0 d-flex justify-content-center bg-transparent border-0"
             >
-              <a href="#" class="btn color-light" role="button">
+              <a href="#" class="btn color-light active-none" id="helpButton" role="button">
                 <i class="bi bi-question-circle fs-2"></i>
               </a>
             </li>
@@ -357,7 +363,7 @@
             <li class="list-group-item ps-0 pe-1 py-0 bg-transparent border-0">
               <a
                 href="#"
-                class="btn d-flex py-0 px-1 flex-column align-items-center color-light btn_border-none-focus active"
+                class="btn d-flex py-1 flex-column align-items-center color-light btn_border-none-focus active"
                 role="button"
               >
                 <i class="bi bi-house fs-2"></i>
@@ -367,7 +373,7 @@
             <li class="list-group-item px-1 py-0 bg-transparent border-0">
               <a
                 href="#"
-                class="btn d-flex py-0 px-1 flex-column align-items-center color-light"
+                class="btn d-flex py-1 flex-column align-items-center color-light"
                 role="button"
               >
                 <i class="bi bi-toggles2 fs-2"></i>
@@ -377,7 +383,7 @@
             <li class="list-group-item px-1 py-0 bg-transparent border-0">
               <a
                 href="#"
-                class="btn d-flex py-0 px-1 flex-column align-items-center color-light"
+                class="btn d-flex py-1 flex-column align-items-center color-light"
                 role="button"
               >
                 <i class="bi bi-file-earmark-text fs-2"></i>
@@ -387,7 +393,7 @@
             <li class="list-group-item px-1 py-0 bg-transparent border-0">
               <a
                 href="#"
-                class="btn d-flex py-0 px-1 flex-column align-items-center color-light"
+                class="btn d-flex py-1 flex-column align-items-center color-light"
                 role="button"
               >
                 <i class="bi bi-folder2 fs-2"></i>
@@ -397,7 +403,7 @@
             <li class="list-group-item ps-1 pe-0 py-0 bg-transparent border-0">
               <a
                 href="#"
-                class="btn d-flex py-0 px-1 flex-column align-items-center color-light"
+                class="btn d-flex py-1 flex-column align-items-center color-light"
                 role="button"
               >
                 <i class="bi bi-gear fs-2"></i>
@@ -414,7 +420,7 @@
 
         <!-- Divergência -->
         <div class="divergencia mt-n12px">
-          <h3 class="ms-2 mb-2 color-dark">
+          <h3 class="ms-2 mb-0 mb-sm-2 color-dark">
             Ocorreu algo! Vamos resolver juntos?
           </h3>
 

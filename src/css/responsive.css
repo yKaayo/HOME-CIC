@@ -26,19 +26,21 @@
     position: absolute;
   }
 
+  #list-menu .list-group-item .btn {
+    padding: 0 6px;
+  }
+
   .bottom-menu-p {
     font-size: 16px;
   }
 }
 
-@media (width > 425px) {
-    #list-menu {
-        padding: 0 8px;
-    }
-}
-
 @media (width <= 425px) {
   /* Bottom Menu */
+  #list-menu .list-group-item .btn {
+    padding: 0 4px;
+  }
+
   .bottom-menu-p {
     font-size: 14px;
   }
