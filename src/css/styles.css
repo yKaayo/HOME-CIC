@@ -3,11 +3,14 @@
   --color-light: #f7f7f7;
   --color-dark: #222222;
   --color-dark-50: #22222250;
-  --color-primary-gray: #e6e6e6;
-  --color-primary-gray-50: #e6e6e650;
+  --color-primary-gray: #4e4e4e;
+  --color-primary-gray-50: #4e4e4e50;
   --color-secundary-gray: #f2f2f2;
   --color-primary-blue: #0063f7;
+  --color-primary-blue-25: #0063f725;
   --color-secundary-blue: #a9dfff;
+  --color-primary-green: #00DA85;
+  --color-primary-green-30: #00DA8530;
   --color-red: #d61515;
   --color-yellow: #dcf15b;
   --color-dark-green: #727409;
@@ -15,6 +18,12 @@
 
 * {
   font-family: "Mulish", sans-serif;
+}
+
+/* Login */
+/* Button Google */
+.btn.d-grid:active {
+  border: transparent;
 }
 
 /* Side Menu */
@@ -62,9 +71,9 @@
 }
 
 /* Eye - Show and Hide */
-#eye {
-  bottom: 4.8rem;
-  right: 2.22rem;
+.eye-edit-profile {
+  bottom: 1.9rem;
+  left: 91.2%;
 }
 
 /* Bottom Menu */

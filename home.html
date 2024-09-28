@@ -222,7 +222,7 @@
                     required
                   />
                   <i
-                    class="bi bi-eye position-absolute"
+                    class="bi bi-eye position-relative eye-edit-profile"
                     id="eye"
                     role="button"
                   ></i>
@@ -333,11 +333,16 @@
               </a>
             </li>
           </ul>
-          <ul class="list-group border-0" >
+          <ul class="list-group border-0">
             <li
               class="list-group-item p-0 d-flex justify-content-center bg-transparent border-0"
             >
-              <a href="#" class="btn color-light active-none" id="helpButton" role="button">
+              <a
+                href="#"
+                class="btn color-light active-none"
+                id="helpButton"
+                role="button"
+              >
                 <i class="bi bi-question-circle fs-2"></i>
               </a>
             </li>
@@ -418,58 +423,79 @@
       <div class="d-flex flex-column gap-32px mt-70px mx-3 mx-sm-4">
         <h2 class="fw-bold color-primary-blue mt-4 mb-0">Home</h2>
 
-        <!-- Divergência -->
-        <div class="divergencia mt-n12px">
-          <h3 class="ms-2 mb-0 mb-sm-2 color-dark">
-            Ocorreu algo! Vamos resolver juntos?
-          </h3>
-
-          <div
-            class="d-none d-sm-flex justify-content-sm-around gap-4 overflow-auto"
-          >
-            <!-- Card 1 -->
-            <div class="card">
-              <div class="card-body p-2">
-                <div
-                  class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3"
-                >
-                  <p class="card-text mb-0 mb-sm-1 fw-bold">Documento</p>
-                  <p class="card-text mb-1">00.00.00000.0000000-00</p>
-                </div>
-                <div
-                  class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3"
-                >
-                  <p class="card-text mb-0 mb-sm-1 fw-bold">Tipo</p>
-                  <p class="card-text mb-1">Pagamento</p>
-                </div>
-                <div
-                  class="d-flex flex-column flex-sm-row justify-content-sm-between align-items-center gap-0 gap-sm-3"
-                >
-                  <p class="card-text mb-0 mb-sm-1 fw-bold">Status</p>
+        <!-- Gráfico -->
+        <div class="graphic">
+          <div class="d-flex gap-4 mb-3">
+            <div class="card" style="width: 18rem">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="">
+                    <h5 class="card-title fw-bold mb-0">R$2.300</h5>
+                    <p class="mb-0 lead">Em setembro</p>
+                  </div>
                   <p
-                    class="card-text mb-1 bg-red color-light py-1 px-2 rounded-4"
+                    class="mb-1 bg-primary-blue color-light py-1 px-3 rounded-4"
                   >
-                    Atrasado
+                    Crédito
                   </p>
                 </div>
-                <div
-                  class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3"
-                >
-                  <p class="card-text mb-0 mb-sm-1 fw-bold">Data</p>
-                  <p class="card-text mb-1">01/01/2000</p>
+                <p class="card-text mt-2">Total em 2024: R$17.300</p>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="">
+                    <h5 class="card-title fw-bold mb-0">R$500</h5>
+                    <p class="mb-0 lead">Em setembro</p>
+                  </div>
+                  <p
+                    class="mb-1 bg-primary-green color-light py-1 px-3 rounded-4"
+                  >
+                    Débito
+                  </p>
                 </div>
+                <p class="card-text mt-2">Total em 2024: R$6.300</p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex gap-2 ms-3">
+            <i class="bi bi-funnel"></i>
+            <p>Filtrar</p>
+          </div>
+          <div class="d-flex justify-content-center">
+            <canvas id="graphic" class="" height="75"></canvas>
+          </div>
+        </div>
+
+        <!-- Divergência -->
+        <div class="divergencia d-flex flex-column mt-n12px">
+          <!-- Créditos -->
+          <h3 class="ms-2 mb-0 mb-sm-2 color-dark">
+            Não deixe seu dinheiro parado! Solicite seus créditos
+          </h3>
+
+          <div class="d-none d-sm-flex gap-4 overflow-auto mb-4 ps-3">
+            <!-- Card 1 -->
+            <div class="card bg-primary-blue-25">
+              <div class="card-body p-3">
                 <div
-                  class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3"
+                  class="d-flex align-items-center justify-content-between gap-3"
                 >
-                  <p class="card-text mb-0 mb-sm-1 fw-bold">Valor</p>
-                  <p class="card-text mb-1">R$ 100,00</p>
+                  <h4 class="card-text mb-1 fw-bold fs">R$ 1000,00</h4>
+                  <p
+                    class="card-text mb-1 bg-primary-blue color-light py-1 px-2 rounded-4"
+                  >
+                    Crédito
+                  </p>
                 </div>
+                <p class="card-text mb-1">Documento 00.00.00000.0000000-00</p>
                 <div class="d-flex justify-content-center w-100">
                   <button
                     type="button"
-                    class="btn btn-blue rounded-pill px-4"
+                    class="btn btn-blue rounded-pill px-3 py-1 mt-2"
                     data-bs-toggle="modal"
-                    data-bs-target="#atrasadoModal"
+                    data-bs-target="#creditoModal"
                   >
                     Mais detalhes
                   </button>
@@ -478,48 +504,25 @@
             </div>
 
             <!-- Card 2 -->
-            <div class="card">
-              <div class="card-body p-2">
+            <div class="card bg-primary-blue-25">
+              <div class="card-body p-3">
                 <div
-                  class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3"
+                  class="d-flex align-items-center justify-content-between gap-3"
                 >
-                  <p class="card-text mb-0 mb-sm-1 fw-bold">Documento</p>
-                  <p class="card-text mb-1">00.00.00000.0000000-00</p>
-                </div>
-                <div
-                  class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3"
-                >
-                  <p class="card-text mb-0 mb-sm-1 fw-bold">Tipo</p>
-                  <p class="card-text mb-1">Pagamento</p>
-                </div>
-                <div
-                  class="d-flex flex-column flex-sm-row justify-content-sm-between align-items-center gap-0 gap-sm-3"
-                >
-                  <p class="card-text mb-0 mb-sm-1 fw-bold">Status</p>
+                  <h4 class="card-text mb-1 fw-bold">R$ 1000,00</h4>
                   <p
-                    class="card-text mb-1 bg-yellow color-dark-green py-1 px-2 rounded-4"
+                    class="card-text mb-1 bg-primary-blue color-light py-1 px-2 rounded-4"
                   >
-                    Vencimento próximo
+                    Crédito
                   </p>
                 </div>
-                <div
-                  class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3"
-                >
-                  <p class="card-text mb-0 mb-sm-1 fw-bold">Data</p>
-                  <p class="card-text mb-1">01/01/2000</p>
-                </div>
-                <div
-                  class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3"
-                >
-                  <p class="card-text mb-0 mb-sm-1 fw-bold">Valor</p>
-                  <p class="card-text mb-1">R$ 100,00</p>
-                </div>
+                <p class="card-text mb-1">Documento 00.00.00000.0000000-00</p>
                 <div class="d-flex justify-content-center w-100">
                   <button
                     type="button"
-                    class="btn btn-blue rounded-pill px-4"
+                    class="btn btn-blue rounded-pill px-3 py-1 mt-2"
                     data-bs-toggle="modal"
-                    data-bs-target="#atrasadoModal"
+                    data-bs-target="#creditoModal"
                   >
                     Mais detalhes
                   </button>
@@ -528,54 +531,264 @@
             </div>
 
             <!-- Card 3 -->
-            <div class="card">
-              <div class="card-body p-2">
+            <div class="card bg-primary-blue-25">
+              <div class="card-body p-3">
                 <div
-                  class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3"
+                  class="d-flex align-items-center justify-content-between gap-3"
                 >
-                  <p class="card-text mb-0 mb-sm-1 fw-bold">Documento</p>
-                  <p class="card-text mb-1">00.00.00000.0000000-00</p>
-                </div>
-                <div
-                  class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3"
-                >
-                  <p class="card-text mb-0 mb-sm-1 fw-bold">Tipo</p>
-                  <p class="card-text mb-1">Pagamento</p>
-                </div>
-                <div
-                  class="d-flex flex-column flex-sm-row justify-content-sm-between align-items-center gap-0 gap-sm-3"
-                >
-                  <p class="card-text mb-0 mb-sm-1 fw-bold">Status</p>
+                  <h4 class="card-text mb-1 fw-bold">R$ 1000,00</h4>
                   <p
                     class="card-text mb-1 bg-primary-blue color-light py-1 px-2 rounded-4"
                   >
-                    Reembolso disponível
+                    Crédito
                   </p>
                 </div>
-                <div
-                  class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3"
-                >
-                  <p class="card-text mb-0 mb-sm-1 fw-bold">Data</p>
-                  <p class="card-text mb-1">01/01/2000</p>
-                </div>
-                <div
-                  class="d-flex flex-column flex-sm-row justify-content-sm-between gap-0 gap-sm-3"
-                >
-                  <p class="card-text mb-0 mb-sm-1 fw-bold">Valor</p>
-                  <p class="card-text mb-1">R$ 100,00</p>
-                </div>
+                <p class="card-text mb-1">Documento 00.00.00000.0000000-00</p>
                 <div class="d-flex justify-content-center w-100">
                   <button
                     type="button"
-                    class="btn btn-blue rounded-pill px-4"
+                    class="btn btn-blue rounded-pill px-3 py-1 mt-2"
                     data-bs-toggle="modal"
-                    data-bs-target="#atrasadoModal"
+                    data-bs-target="#creditoModal"
                   >
                     Mais detalhes
                   </button>
                 </div>
               </div>
             </div>
+
+            <!-- Modal - Detalhes -->
+            <div
+              class="modal fade"
+              id="creditoModal"
+              tabindex="-1"
+              aria-labelledby="creditoModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div
+                    class="modal-body d-flex flex-column align-items-center p-20px"
+                  >
+                    <h2 class="text-center color-dark fw-bold fs-2 balance">
+                      Você possui créditos a serem
+                      <span class="color-primary-blue">resgatados</span>!
+                    </h2>
+                    <p class="text-center px-2 px-md-5 mt-3">
+                      O documento de número<br /><span class="fw-bold"
+                        >00.00.00000.0000000-00</span
+                      >
+                      possui crédito no<br />valor de
+                      <span class="fw-bold">R$ 100,00</span>
+                    </p>
+                    <button
+                      type="button"
+                      class="btn btn-blue fs-5 rounded-5 px-4 mt-1"
+                      data-bs-toggle="modal"
+                      data-bs-target="#creditoResolverModal"
+                    >
+                      Receber agora
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-outline-gray mt-3"
+                      data-bs-dismiss="modal"
+                    >
+                      Receber depois
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal - Detalhes - End -->
+
+            <!-- Modal - Resolver -->
+            <div
+              class="modal fade"
+              id="creditoResolverModal"
+              tabindex="-1"
+              aria-labelledby="creditoResolverModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content p-20px">
+                  <div class="d-flex flex-column align-items-end">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="d-flex flex-column align-items-center">
+                    <h2>
+                      Siga o
+                      <span class="color-primary-blue">passo a passo</span>
+                    </h2>
+                    <ol class="mt-3">
+                      <li class="mb-2">
+                        Acesse o portal do <a href="#">e-CAC</a>
+                      </li>
+                      <li class="mb-2">
+                        Selecione a opção "Acessar PER/DCOMP WEB"
+                      </li>
+                      <li class="mb-2">
+                        Selecione a opção "Pedido de Restituição"
+                      </li>
+                      <li>Preencha os dados do documento corretamente</li>
+                    </ol>
+                    <h3 class="mt-3 mb-0">
+                      Não foi possível
+                      <span class="color-primary-blue">resgatar</span>?
+                    </h3>
+                    <a href="" class="btn color-primary-blue p-0"
+                      >Contatar o suporte</a
+                    >
+                    <button
+                      type="button"
+                      class="btn btn-blue mt-3 rounded-pill px-4 fs-5"
+                      data-bs-dismiss="modal"
+                    >
+                      Voltar para Home
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal - Resolver - End -->
+          </div>
+
+          <!-- Débitos -->
+          <h3 class="ms-2 mb-0 mb-sm-2 color-dark">
+            Alivie-se da preocupação! Solucione suas pendências
+          </h3>
+
+          <div class="d-none d-sm-flex gap-4 overflow-auto mb-4 ps-3">
+            <!-- Card 1 -->
+            <div class="card bg-primary-green-30">
+              <div class="card-body p-3">
+                <div
+                  class="d-flex align-items-center justify-content-between gap-3"
+                >
+                  <h4 class="card-text mb-1 fw-bold fs">R$ 600,00</h4>
+                  <p
+                    class="card-text mb-1 bg-primary-green color-light py-1 px-2 rounded-4"
+                  >
+                    Débito
+                  </p>
+                </div>
+                <p class="card-text mb-1">Documento 00.00.00000.0000000-00</p>
+                <div class="d-flex justify-content-center w-100">
+                  <button
+                    type="button"
+                    class="btn btn-blue rounded-pill px-3 py-1 mt-2"
+                    data-bs-toggle="modal"
+                    data-bs-target="#debitoModal"
+                  >
+                    Mais detalhes
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal - Detalhes -->
+            <div
+              class="modal fade"
+              id="debitoModal"
+              tabindex="-1"
+              aria-labelledby="debitoModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div
+                    class="modal-body d-flex flex-column align-items-center p-20px"
+                  >
+                    <h2 class="text-center color-dark fw-bold fs-2 balance">
+                      Você possui um valor
+                      <span class="color-primary-blue">pedente</span> a ser <span class="color-primary-blue">enviado</span>!
+                    </h2>
+                    <p class="text-center px-2 px-md-5 mt-3">
+                      O documento de número<br /><span class="fw-bold"
+                        >00.00.00000.0000000-00</span
+                      > foi declarado com um valor menor do que deveria e há um débito no<br />valor de
+                      <span class="fw-bold">R$ 600,00</span>
+                    </p>
+                    <button
+                      type="button"
+                      class="btn btn-blue fs-5 rounded-5 px-4 mt-1"
+                      data-bs-toggle="modal"
+                      data-bs-target="#debitoResolverModal"
+                    >
+                      Receber agora
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-outline-gray mt-3"
+                      data-bs-dismiss="modal"
+                    >
+                      Receber depois
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal - Detalhes - End -->
+
+            <!-- Modal - Resolver -->
+            <div
+              class="modal fade"
+              id="debitoResolverModal"
+              tabindex="-1"
+              aria-labelledby="debitoResolverModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content p-20px">
+                  <div class="d-flex flex-column align-items-end">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="d-flex flex-column align-items-center">
+                    <h2>
+                      Siga o
+                      <span class="color-primary-blue">passo a passo</span>
+                    </h2>
+                    <ol class="mt-3">
+                      <li class="mb-2">
+                        Acesse o portal do <a href="#">e-CAC</a>
+                      </li>
+                      <li class="mb-2">
+                        Selecione a opção "Acessar PER/DCOMP WEB"
+                      </li>
+                      <li class="mb-2">
+                        Selecione a opção "Pedido de Restituição"
+                      </li>
+                      <li>Preencha os dados do documento corretamente</li>
+                    </ol>
+                    <h3 class="mt-3 mb-0">
+                      Não foi possível
+                      <span class="color-primary-blue">resgatar</span>?
+                    </h3>
+                    <a href="" class="btn color-primary-blue p-0"
+                      >Contatar o suporte</a
+                    >
+                    <button
+                      type="button"
+                      class="btn btn-blue mt-3 rounded-pill px-4 fs-5"
+                      data-bs-dismiss="modal"
+                    >
+                      Voltar para Home
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal - Resolver - End -->
           </div>
         </div>
 
@@ -756,111 +969,6 @@
           </button>
         </div>
         <!-- Carousel - item -->
-
-        <!-- Modal - Detalhes -->
-        <div
-          class="modal fade"
-          id="atrasadoModal"
-          tabindex="-1"
-          aria-labelledby="atrasadoModalLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div
-                class="modal-body d-flex flex-column align-items-center p-20px"
-              >
-                <h2 class="text-center color-dark fw-bold fs-2">
-                  Você possui divergências a serem
-                  <span class="color-primary-blue">solucionadas</span>!
-                </h2>
-                <p class="text-center px-2 px-md-5 mt-3">
-                  O documento de número<br /><span class="fw-bold"
-                    >00.00.00000.0000000-00</span
-                  >
-                  foi pago de forma indevida no dia
-                  <span class="fw-bold">01/01/2000</span><br />no valor de
-                  <span class="fw-bold">R$ 100,00</span>
-                </p>
-                <div
-                  class="box bg-secundary-blue color-primary-blue rounded-2 w-75 text-center"
-                >
-                  <p class="m-0 p-2 fs-5 lh-sm fw-bold">
-                    Ainda há tempo!<br />Siga o passo-a-passo
-                  </p>
-                </div>
-                <button
-                  type="button"
-                  class="btn btn-primary fs-5 rounded-5 px-4 mt-3"
-                  data-bs-toggle="modal"
-                  data-bs-target="#resolveModal"
-                >
-                  Resolver agora
-                </button>
-                <button
-                  type="button"
-                  class="btn btn-outline-gray mt-3"
-                  data-bs-dismiss="modal"
-                >
-                  Resolver depois
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Modal - Detalhes - End -->
-
-        <!-- Modal - Resolver -->
-        <div
-          class="modal fade"
-          id="resolveModal"
-          tabindex="-1"
-          aria-labelledby="resolveModalLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog">
-            <div class="modal-content p-20px">
-              <div class="d-flex flex-column align-items-end">
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="d-flex flex-column align-items-center">
-                <h2>
-                  Siga o <span class="color-primary-blue">passo a passo</span>
-                </h2>
-                <ol class="mt-3">
-                  <li class="mb-2">Acesse o portal do <a href="#">e-CAC</a></li>
-                  <li class="mb-2">
-                    Selecione a opção "Acessar PER/DCOMP WEB"
-                  </li>
-                  <li class="mb-2">
-                    Selecione a opção "Pedido de Restituição"
-                  </li>
-                  <li>Preencha os dados do documento corretamente</li>
-                </ol>
-                <h3 class="mt-3 mb-0">
-                  Não foi possível
-                  <span class="color-primary-blue">resolver</span>?
-                </h3>
-                <a href="" class="btn color-primary-blue p-0"
-                  >Contatar o suporte</a
-                >
-                <button
-                  type="button"
-                  class="btn btn-blue mt-3 rounded-pill px-4 fs-5"
-                  data-bs-dismiss="modal"
-                >
-                  Voltar para Home
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Modal - Resolver - End -->
 
         <!-- Divergência - End -->
 
@@ -1063,92 +1171,6 @@
           </div>
         </div>
         <!-- Informations - End -->
-
-        <!-- Board -->
-        <div class="board p-3 rounded-3 bg-secundary-gray">
-          <div class="porcent d-flex mb-3 w-100">
-            <div
-              class="item d-flex justify-content-center w-60 bg-primary-blue rounded-start py-1"
-            >
-              <p class="m-0 color-light">60%</p>
-            </div>
-            <div
-              class="item d-flex justify-content-center w-40 bg-secundary-blue rounded-end py-1"
-            >
-              <p class="m-0">40%</p>
-            </div>
-          </div>
-          <div class="porcent-text px-2">
-            <!-- Item 1 -->
-            <div class="item row mt-2">
-              <div class="col-10 col-sm-8 col-md-6 px-1">
-                <div class="d-flex align-items-center">
-                  <div class="circle rounded-circle bg-primary-blue"></div>
-                  <p class="mb-0 ms-1">IRRF Juros sobre o Capital Próprio</p>
-                </div>
-              </div>
-              <div class="col-1 col-sm-3 col-md-5 px-1">
-                <div
-                  class="d-none d-sm-flex justify-content-center align-items-center h-100"
-                >
-                  <p class="mb-0">R$ 6.000,00</p>
-                </div>
-              </div>
-              <div class="col-1 px-1">
-                <div
-                  class="d-flex justify-content-end align-items-center h-100"
-                >
-                  <p class="d-none d-sm-flex mb-0">60%</p>
-                  <button
-                    type="button"
-                    class="btn d-sm-none"
-                    data-bs-placement="top"
-                    data-bs-custom-class="custom-tooltip"
-                    data-bs-toggle="tooltip"
-                    data-bs-title="R$6.000,00 - 60%"
-                  >
-                    <i class="bi bi-plus-lg"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <!-- Item 2 -->
-            <div class="item row mt-0 mt-sm-2">
-              <div class="col-10 col-sm-8 col-md-6 px-1">
-                <div class="d-flex align-items-center">
-                  <div class="circle rounded-circle bg-secundary-blue"></div>
-                  <p class="mb-0 ms-1">COFINS - Mercado Interno</p>
-                </div>
-              </div>
-              <div class="col-1 col-sm-3 col-md-5 px-1">
-                <div
-                  class="d-none d-sm-flex justify-content-center align-items-center h-100"
-                >
-                  <p class="mb-0">R$ 4.000,00</p>
-                </div>
-              </div>
-              <div class="col-1 px-1">
-                <div
-                  class="d-flex justify-content-end align-items-center h-100"
-                >
-                  <p class="d-none d-sm-flex mb-0">40%</p>
-                  <button
-                    type="button"
-                    class="btn d-sm-none"
-                    data-bs-placement="top"
-                    data-bs-custom-class="custom-tooltip"
-                    data-bs-toggle="tooltip"
-                    data-bs-title="R$4.000,00 - 40%"
-                  >
-                    <i class="bi bi-plus-lg"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Board - End -->
       </div>
     </main>
 
@@ -1158,6 +1180,9 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <!-- JS -->
     <script src="./src/js/main.js"></script>

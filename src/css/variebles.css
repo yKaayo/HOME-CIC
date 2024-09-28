@@ -26,6 +26,9 @@ button.btn.btn_border-none-focus:active {
 .color-light {
   color: var(--color-light);
 }
+.color-secundary-gray {
+  color: var(--color-secundary-gray);
+}
 .color-dark {
   color: var(--color-dark);
 }
@@ -45,8 +48,20 @@ button.btn.btn_border-none-focus:active {
   background-color: var(--color-primary-blue);
 }
 
+.bg-primary-blue-25 {
+  background-color: var(--color-primary-blue-25);
+}
+
 .bg-secundary-blue {
   background-color: var(--color-secundary-blue);
+}
+
+.bg-primary-green {
+  background-color: var(--color-primary-green);
+}
+
+.bg-primary-green-30 {
+  background-color: var(--color-primary-green-30);
 }
 
 .bg-primary-gray {
@@ -107,12 +122,13 @@ button.btn.btn_border-none-focus:active {
 /* Button Outline */
 .btn-outline-gray {
   color: var(--color-dark);
-  background-color: var(--color-primary-gray);
-  border: 1px var(--color-primary-light) solid;
+  background-color: transparent;
+  border: 1px var(--color-primary-gray-50) solid;
   transition: 0.4s;
-
+  
   &:hover {
     background-color: var(--color-primary-gray-50);
+    border: 1px var(--color-primary-gray-50) solid;
   }
 }
 
@@ -126,4 +142,19 @@ form input.elevation-gray:focus {
 .custom-tooltip {
   --bs-tooltip-bg: var(--color-primary-blue);
   --bs-tooltip-color: var(--color-light);
+}
+
+/* Underline */
+.blue-underline {
+  border-bottom: 2px solid transparent;
+  transition: .2s;
+
+  &:hover {
+    border-bottom: 2px solid var(--color-primary-blue);
+  }
+}
+
+/* Balance */
+.balance {
+  text-wrap: balance;
 }

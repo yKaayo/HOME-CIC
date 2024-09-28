@@ -63,3 +63,35 @@ eye.addEventListener("click", () => {
     eye.classList.replace("bi-eye-slash", "bi-eye");
   }
 });
+
+// Gráfico
+const data = document.querySelector('#graphic');
+
+new Chart(data, {
+  type: 'line',
+  data: {
+    labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
+    datasets: [{
+      label: 'Créditos',
+      data: [2000, 1000, 3000, 2400, 1600, 3000, 800, 1200, 2300, 0, 0, 0],
+      borderWidth: 1,
+      backgroundColor: '#0063f7',
+      borderColor: '#0063f7'
+    },
+    {
+      label: 'Débitos',
+      data: [600, 200, 800, 400, 1200, 500, 1300, 800, 500, 0, 0, 0],
+      borderWidth: 1,
+      backgroundColor: '#00DA85',
+      borderColor: '#00DA85'
+    }]
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
+});
+
