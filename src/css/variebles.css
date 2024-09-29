@@ -133,9 +133,15 @@ button.btn.btn_border-none-focus:active {
 }
 
 /* Elevation (Focus) */
-form input.elevation-gray:focus {
+input.elevation-gray:focus {
   border: none;
   box-shadow: 0 0 4px var(--color-dark-50);
+}
+
+/* Selection (Focus) */
+.form-select:focus {
+  box-shadow: none;
+  border-color: var(--color-dark);
 }
 
 /* Tooltips */

@@ -44,4 +44,13 @@
   .bottom-menu-p {
     font-size: 14px;
   }
+
+  /* Graphic */
+  .graphic .graphic-cards {
+    flex-direction: column;
+
+    & .card {
+      width: 100%;
+    }
+  }
 }
