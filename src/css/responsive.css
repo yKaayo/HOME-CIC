@@ -13,6 +13,10 @@
   .divergencia .card {
     min-width: 20rem;
   }
+
+  #graphic {
+    min-height: 300px;
+  }
 }
 
 @media (width <= 575px) {

@@ -77,7 +77,7 @@
 }
 
 /* Bottom Menu */
-.bottom-menu .bi-question-circle {
+.bottom-menu .bi-question-circle-fill {
   bottom: 6rem;
   right: 1rem;
 }
@@ -93,7 +93,7 @@
 }
 
 .carousel-indicators circle {
-  stroke: var(--color-primary-blue);
+  stroke: var(--color-dark);
   stroke-width: 2;
   stroke-dasharray: 88;
   stroke-dashoffset: 0;
