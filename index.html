@@ -353,7 +353,7 @@
 
       <!-- Bottom Menu -->
       <div
-        class="bottom-menu position-fixed bottom-0 left-0 vw-100 d-sm-none z-1"
+        class="bottom-menu position-fixed bottom-0 left-0 vw-100 d-sm-none z-3"
       >
         <a href="#" class="">
           <i class="bi bi-question-circle fs-2 position-fixed"></i>
@@ -469,10 +469,14 @@
 
           <!-- Filter -->
           <form action="" class="d-flex gap-3" id="filterForm">
-            <button class="btn btn-outline-gray me-2" type="submit" id="filterBtn">
+            <button
+              class="btn btn-outline-gray me-2"
+              type="submit"
+              id="filterBtn"
+            >
               <i class="bi bi-funnel me-1"></i>Filtrar
             </button>
-          
+
             <!-- Graphic Type -->
             <div class="dropdown">
               <select class="form-select" id="graphicType">
@@ -480,7 +484,7 @@
                 <option value="bar">Barra</option>
               </select>
             </div>
-          
+
             <!-- Graphic Data -->
             <div class="dropdown">
               <select class="form-select" id="graphicData">
@@ -493,18 +497,18 @@
 
           <!-- Gráficos Modelos -->
           <div class="d-flex justify-content-center">
-            <canvas id="graphic" class="" height="70"></canvas>
+            <canvas id="graphic"></canvas>
           </div>
         </div>
 
         <!-- Divergência -->
         <div class="divergencia d-flex flex-column mt-n12px">
           <!-- Créditos -->
-          <h3 class="ms-2 mb-0 mb-sm-2 color-dark">
+          <h3 class="ms-2 mb-1 mb-sm-2 color-dark text-center text-sm-start">
             Não deixe seu dinheiro parado! Solicite seus créditos
           </h3>
 
-          <div class="d-flex gap-4 overflow-auto mb-4 ps-3">
+          <div class="d-none d-sm-flex gap-4 overflow-auto mb-4 ps-3">
             <!-- Card 1 -->
             <div class="card bg-primary-blue-25">
               <div class="card-body p-3">
@@ -585,110 +589,270 @@
                 </div>
               </div>
             </div>
-
-            <!-- Modal - Detalhes -->
-            <div
-              class="modal fade"
-              id="creditoModal"
-              tabindex="-1"
-              aria-labelledby="creditoModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div
-                    class="modal-body d-flex flex-column align-items-center p-20px"
-                  >
-                    <h2 class="text-center color-dark fw-bold fs-2 balance">
-                      Você possui créditos a serem
-                      <span class="color-primary-blue">resgatados</span>!
-                    </h2>
-                    <p class="text-center px-2 px-md-5 mt-3">
-                      O documento de número<br /><span class="fw-bold"
-                        >00.00.00000.0000000-00</span
-                      >
-                      possui crédito no<br />valor de
-                      <span class="fw-bold">R$ 100,00</span>
-                    </p>
-                    <button
-                      type="button"
-                      class="btn btn-blue fs-5 rounded-5 px-4 mt-1"
-                      data-bs-toggle="modal"
-                      data-bs-target="#creditoResolverModal"
-                    >
-                      Receber agora
-                    </button>
-                    <button
-                      type="button"
-                      class="btn btn-outline-gray mt-3"
-                      data-bs-dismiss="modal"
-                    >
-                      Receber depois
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Modal - Detalhes - End -->
-
-            <!-- Modal - Resolver -->
-            <div
-              class="modal fade"
-              id="creditoResolverModal"
-              tabindex="-1"
-              aria-labelledby="creditoResolverModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog">
-                <div class="modal-content p-20px">
-                  <div class="d-flex flex-column align-items-end">
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="d-flex flex-column align-items-center">
-                    <h2>
-                      Siga o
-                      <span class="color-primary-blue">passo a passo</span>
-                    </h2>
-                    <ol class="mt-3">
-                      <li class="mb-2">
-                        Acesse o portal do <a href="#">e-CAC</a>
-                      </li>
-                      <li class="mb-2">
-                        Selecione a opção "Acessar PER/DCOMP WEB"
-                      </li>
-                      <li class="mb-2">
-                        Selecione a opção "Pedido de Restituição"
-                      </li>
-                      <li>Preencha os dados do documento corretamente</li>
-                    </ol>
-                    <h3 class="mt-3 mb-0">
-                      Não foi possível
-                      <span class="color-primary-blue">resgatar</span>?
-                    </h3>
-                    <a href="" class="btn color-primary-blue p-0"
-                      >Contatar o suporte</a
-                    >
-                    <button
-                      type="button"
-                      class="btn btn-blue mt-3 rounded-pill px-4 fs-5"
-                      data-bs-dismiss="modal"
-                    >
-                      Voltar para Home
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Modal - Resolver - End -->
           </div>
 
+          <div
+            id="carouselCredit"
+            class="d-sm-none carousel carousel-dark slide mb-5"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <svg height="100" width="100" xmlns="http://www.w3.org/2000/svg">
+                <circle
+                  r="12"
+                  cx="50"
+                  cy="50"
+                  fill="transparent"
+                  type="button"
+                  data-bs-target="#carouselCredit"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                />
+              </svg>
+              <svg height="100" width="100" xmlns="http://www.w3.org/2000/svg">
+                <circle
+                  r="12"
+                  cx="50"
+                  cy="50"
+                  fill="transparent"
+                  type="button"
+                  data-bs-target="#carouselCredit"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                />
+              </svg>
+              <svg height="100" width="100" xmlns="http://www.w3.org/2000/svg">
+                <circle
+                  r="12"
+                  cx="50"
+                  cy="50"
+                  fill="transparent"
+                  type="button"
+                  data-bs-target="#carouselCredit"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                />
+              </svg>
+            </div>
+            <div class="carousel-inner px-1">
+              <div class="carousel-item active px-5">
+                <div class="card bg-primary-blue-25">
+                  <div class="card-body p-3">
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-3"
+                    >
+                      <h4 class="card-text mb-1 fw-bold fs">R$ 1000,00</h4>
+                      <p
+                        class="card-text mb-1 bg-primary-blue color-light py-1 px-2 rounded-4"
+                      >
+                        Crédito
+                      </p>
+                    </div>
+                    <p class="card-text mb-1">
+                      Documento 00.00.00000.0000000-00
+                    </p>
+                    <div class="d-flex justify-content-center w-100">
+                      <button
+                        type="button"
+                        class="btn btn-blue rounded-pill px-3 py-1 mt-2"
+                        data-bs-toggle="modal"
+                        data-bs-target="#creditoModal"
+                      >
+                        Mais detalhes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item px-5">
+                <div class="card bg-primary-blue-25">
+                  <div class="card-body p-3">
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-3"
+                    >
+                      <h4 class="card-text mb-1 fw-bold">R$ 1000,00</h4>
+                      <p
+                        class="card-text mb-1 bg-primary-blue color-light py-1 px-2 rounded-4"
+                      >
+                        Crédito
+                      </p>
+                    </div>
+                    <p class="card-text mb-1">
+                      Documento 00.00.00000.0000000-00
+                    </p>
+                    <div class="d-flex justify-content-center w-100">
+                      <button
+                        type="button"
+                        class="btn btn-blue rounded-pill px-3 py-1 mt-2"
+                        data-bs-toggle="modal"
+                        data-bs-target="#creditoModal"
+                      >
+                        Mais detalhes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item px-5">
+                <div class="card bg-primary-blue-25">
+                  <div class="card-body p-3">
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-3"
+                    >
+                      <h4 class="card-text mb-1 fw-bold">R$ 1000,00</h4>
+                      <p
+                        class="card-text mb-1 bg-primary-blue color-light py-1 px-2 rounded-4"
+                      >
+                        Crédito
+                      </p>
+                    </div>
+                    <p class="card-text mb-1">
+                      Documento 00.00.00000.0000000-00
+                    </p>
+                    <div class="d-flex justify-content-center w-100">
+                      <button
+                        type="button"
+                        class="btn btn-blue rounded-pill px-3 py-1 mt-2"
+                        data-bs-toggle="modal"
+                        data-bs-target="#creditoModal"
+                      >
+                        Mais detalhes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselCredit"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselCredit"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+
+          <!-- Modal - Detalhes -->
+          <div
+            class="modal fade"
+            id="creditoModal"
+            tabindex="-1"
+            aria-labelledby="creditoModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div
+                  class="modal-body d-flex flex-column align-items-center p-20px"
+                >
+                  <h2 class="text-center color-dark fw-bold fs-2 balance">
+                    Você possui créditos a serem
+                    <span class="color-primary-blue">resgatados</span>!
+                  </h2>
+                  <p class="text-center px-2 px-md-5 mt-3">
+                    O documento de número<br /><span class="fw-bold"
+                      >00.00.00000.0000000-00</span
+                    >
+                    possui crédito no<br />valor de
+                    <span class="fw-bold">R$ 100,00</span>
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-blue fs-5 rounded-5 px-4 mt-1"
+                    data-bs-toggle="modal"
+                    data-bs-target="#creditoResolverModal"
+                  >
+                    Receber agora
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-gray mt-3"
+                    data-bs-dismiss="modal"
+                  >
+                    Receber depois
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal - Detalhes - End -->
+
+          <!-- Modal - Resolver -->
+          <div
+            class="modal fade"
+            id="creditoResolverModal"
+            tabindex="-1"
+            aria-labelledby="creditoResolverModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content p-20px">
+                <div class="d-flex flex-column align-items-end">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                  <h2>
+                    Siga o
+                    <span class="color-primary-blue">passo a passo</span>
+                  </h2>
+                  <ol class="mt-3">
+                    <li class="mb-2">
+                      Acesse o portal do <a href="#">e-CAC</a>
+                    </li>
+                    <li class="mb-2">
+                      Selecione a opção "Acessar PER/DCOMP WEB"
+                    </li>
+                    <li class="mb-2">
+                      Selecione a opção "Pedido de Restituição"
+                    </li>
+                    <li>Preencha os dados do documento corretamente</li>
+                  </ol>
+                  <h3 class="mt-3 mb-0">
+                    Não foi possível
+                    <span class="color-primary-blue">resgatar</span>?
+                  </h3>
+                  <a href="" class="btn color-primary-blue p-0"
+                    >Contatar o suporte</a
+                  >
+                  <button
+                    type="button"
+                    class="btn btn-blue mt-3 rounded-pill px-4 fs-5"
+                    data-bs-dismiss="modal"
+                  >
+                    Voltar para Home
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal - Resolver - End -->
+
           <!-- Débitos -->
-          <h3 class="ms-2 mb-0 mb-sm-2 color-dark">
+          <h3 class="ms-2 mt-4 mb-1 mb-sm-2 color-dark text-center text-sm-start">
             Alivie-se da preocupação! Solucione suas pendências
           </h3>
 

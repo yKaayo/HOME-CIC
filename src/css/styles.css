@@ -87,6 +87,18 @@
   width: 20rem;
 }
 
+/* Divergência */
+.carousel-indicators {
+  bottom: -5.8rem;
+}
+
+.carousel-indicators circle {
+  stroke: var(--color-primary-blue);
+  stroke-width: 2;
+  stroke-dasharray: 88;
+  stroke-dashoffset: 0;
+}
+
 /* Information */
 .information-card {
   min-width: 276px;

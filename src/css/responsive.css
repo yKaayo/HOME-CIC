@@ -46,6 +46,10 @@
   }
 
   /* Graphic */
+  #graphic {
+    min-height: 200px;
+  }
+
   .graphic .graphic-cards {
     flex-direction: column;
 
