@@ -487,11 +487,7 @@
                 </select>
               </div>
             </div>
-            <button
-              class="btn btn-blue me-2"
-              type="submit"
-              id="filterBtn"
-            >
+            <button class="btn btn-blue me-2" type="submit" id="filterBtn">
               <i class="bi bi-funnel me-1"></i>Filtrar
             </button>
           </form>
@@ -502,14 +498,250 @@
           </div>
         </div>
 
+        <!-- Informations -->
+        <div class="d-flex flex-column gap-2 overflow-x-auto">
+          <!-- Row 1 -->
+          <div class="d-flex justify-content-between gap-4">
+            <!-- Card 1 -->
+            <div class="card information-card rounded-start-0">
+              <div class="card-body d-flex p-0">
+                <div class="bg-primary-blue"></div>
+                <div class="text p-2 me-auto">
+                  <h5 class="card-title color-primary-blue">0</h5>
+                  <p class="card-text">Processo Administrativo</p>
+                </div>
+                <i
+                  class="bi bi-info-circle pt-2 pe-2"
+                  data-bs-toggle="tooltip"
+                  data-bs-title="Quantidade de processos administrativos de crédito registrados"
+                  data-bs-custom-class="custom-tooltip"
+                ></i>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card information-card rounded-start-0">
+              <div class="card-body d-flex p-0">
+                <div class="bg-primary-blue"></div>
+                <div class="text p-2 me-auto">
+                  <h5 class="card-title color-primary-blue">2</h5>
+                  <p class="card-text">Pedidos de Crédito</p>
+                </div>
+                <i
+                  class="bi bi-info-circle pt-2 pe-2"
+                  data-bs-toggle="tooltip"
+                  data-bs-title="Quantidade de pedidos de restituição/ressarcimento de crédito registrados"
+                  data-bs-custom-class="custom-tooltip"
+                ></i>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card information-card rounded-start-0">
+              <div class="card-body d-flex p-0">
+                <div class="bg-primary-blue"></div>
+                <div class="text p-2 me-auto">
+                  <h5 class="card-title color-primary-blue">0</h5>
+                  <p class="card-text">Declaração de Compensação</p>
+                </div>
+                <i
+                  class="bi bi-info-circle pt-2 pe-2"
+                  data-bs-toggle="tooltip"
+                  data-bs-title="Quantidade de declarações de compensação registrados"
+                  data-bs-custom-class="custom-tooltip"
+                ></i>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card information-card rounded-start-0">
+              <div class="card-body d-flex p-0">
+                <div class="bg-primary-blue"></div>
+                <div class="text p-2 me-auto">
+                  <h5 class="card-title color-dark-50 fs-6">
+                    R$ <span class="color-primary-blue fs-5">0</span>
+                  </h5>
+                  <p class="card-text">Valor de Reserva</p>
+                </div>
+                <i
+                  class="bi bi-info-circle pt-2 pe-2"
+                  data-bs-toggle="tooltip"
+                  data-bs-custom-class="custom-tooltip"
+                  data-bs-title="Valores de reserva de crédito por tipo: Reserva Transitória, Dedução de Crédito, Mandado de Segurança, Recuperação Rápida
+                 "
+                ></i>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="card information-card rounded-start-0">
+              <div class="card-body d-flex p-0">
+                <div class="bg-primary-blue"></div>
+                <div class="text p-2 me-auto">
+                  <h5 class="card-title color-dark-50 fs-6">
+                    R$ <span class="color-primary-blue fs-5">0</span>
+                  </h5>
+                  <p class="card-text">Liquidação de Crédito</p>
+                </div>
+                <i
+                  class="bi bi-info-circle pt-2 pe-2"
+                  data-bs-toggle="tooltip"
+                  data-bs-title="Detalhe do valor do pagamento de ressarcimento e restituição"
+                  data-bs-custom-class="custom-tooltip"
+                ></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Row 2 -->
+          <div class="d-flex justify-content-between gap-4">
+            <!-- Card 1 -->
+            <div class="card information-card rounded-start-0">
+              <div class="card-body d-flex p-0">
+                <div class="bg-primary-blue"></div>
+                <div class="text p-2 me-auto">
+                  <h5 class="card-title color-dark-50 fs-6">
+                    R$ <span class="color-primary-blue fs-5">0</span> mil
+                  </h5>
+                  <p class="card-text">Crédito Original Inicial</p>
+                </div>
+                <i
+                  class="bi bi-info-circle pt-2 pe-2"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="bottom"
+                  data-bs-title="Valor disponível de saldo de crédito em valor original"
+                  data-bs-custom-class="custom-tooltip"
+                ></i>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card information-card rounded-start-0">
+              <div class="card-body d-flex p-0">
+                <div class="bg-primary-blue"></div>
+                <div class="text p-2 me-auto">
+                  <h5 class="card-title color-dark-50 fs-6">
+                    R$ <span class="color-primary-blue fs-5">0</span>
+                  </h5>
+                  <p class="card-text">Crédito Original Utilizado</p>
+                </div>
+                <i
+                  class="bi bi-info-circle pt-2 pe-2"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="bottom"
+                  data-bs-title="Valor de crédito original utilizado para a compensação de débitos"
+                  data-bs-custom-class="custom-tooltip"
+                ></i>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card information-card rounded-start-0">
+              <div class="card-body d-flex p-0">
+                <div class="bg-primary-blue"></div>
+                <div class="text p-2 me-auto">
+                  <h5 class="card-title color-dark-50 fs-6">
+                    R$ <span class="color-primary-blue fs-5">0</span>
+                  </h5>
+                  <p class="card-text">Débitos Compensados</p>
+                </div>
+                <i
+                  class="bi bi-info-circle pt-2 pe-2"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="bottom"
+                  data-bs-title="Valor de débitos compensados"
+                  data-bs-custom-class="custom-tooltip"
+                ></i>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card information-card rounded-start-0">
+              <div class="card-body d-flex p-0">
+                <div class="bg-primary-blue"></div>
+                <div class="text p-2 me-auto">
+                  <h5 class="card-title color-dark-50 fs-6">
+                    R$ <span class="color-primary-blue fs-5">11,0</span> mil
+                  </h5>
+                  <p class="card-text">Saldo de Crédito Original</p>
+                </div>
+                <i
+                  class="bi bi-info-circle pt-2 pe-2"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="bottom"
+                  data-bs-title="Valor disponível de saldo de crédito em valor original"
+                  data-bs-custom-class="custom-tooltip"
+                ></i>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="card information-card rounded-start-0">
+              <div class="card-body d-flex p-0">
+                <div class="bg-primary-blue"></div>
+                <div class="text p-2 me-auto">
+                  <h5 class="card-title color-dark-50 fs-6">
+                    R$ <span class="color-primary-blue fs-5">11,0</span> mil
+                  </h5>
+                  <p class="card-text">Saldo de Crédito Atualizado</p>
+                </div>
+                <i
+                  class="bi bi-info-circle pt-2 pe-2"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="bottom"
+                  data-bs-title="Valor de saldo do crédito disponível"
+                  data-bs-custom-class="custom-tooltip"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Informations - End -->
+
         <!-- Divergência -->
-        <div class="divergencia d-flex flex-column mt-n12px">
+        <div class="divergencia d-flex flex-column mt-3">
           <!-- Créditos -->
           <h3 class="ms-2 mb-1 mb-sm-2 color-dark text-center text-sm-start">
             Não deixe seu dinheiro parado! Solicite seus créditos
           </h3>
 
-          <div class="d-none d-sm-flex gap-4 overflow-auto mb-4 ps-3">
+          <!-- Credit Filter -->
+          <form action="" class="d-flex mb-2 gap-3" id="filterCredit">
+            <div class="dropdown">
+              <button
+                class="btn btn-gray dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Valor
+              </button>
+              <div class="dropdown-menu px-2">
+                <label for="filterCreditInput" class="form-label"
+                  >Digite o valor mínimo:
+                </label>
+                <input
+                  type="number"
+                  id="filterCreditInput"
+                  class="form-control elevation-gray"
+                  placeholder="0"
+                />
+              </div>
+            </div>
+            <button
+              class="btn btn-blue me-2"
+              type="submit"
+              id="filterCreditBtn"
+            >
+              <i class="bi bi-funnel me-1"></i>Filtrar
+            </button>
+          </form>
+
+          <h3 id="nullCredit" class="ms-3 mt-2"></h3>
+
+          <div
+            class="credit-cards d-none d-sm-flex gap-4 overflow-auto mb-4 ps-3"
+          >
             <!-- Card 1 -->
             <div class="card bg-primary-blue-25">
               <div class="card-body p-3">
@@ -595,7 +827,7 @@
           <!-- Carousel -->
           <div
             id="carouselCredit"
-            class="d-sm-none carousel carousel-dark slide mb-5"
+            class="d-flex d-sm-none carousel carousel-dark slide mb-5"
             data-bs-ride="carousel"
           >
             <div class="carousel-indicators">
@@ -860,7 +1092,39 @@
             Alivie-se da preocupação! Solucione suas pendências
           </h3>
 
-          <div class="d-none d-sm-flex gap-4 overflow-auto mb-4 ps-3">
+          <!-- Debit Filter -->
+          <form action="" class="d-flex mb-2 gap-3" id="filterDebit">
+            <div class="dropdown">
+              <button
+                class="btn btn-gray dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Valor
+              </button>
+              <div class="dropdown-menu px-2">
+                <label for="filterDebitInput" class="form-label"
+                  >Digite o valor mínimo:
+                </label>
+                <input
+                  type="number"
+                  id="filterDebitInput"
+                  class="form-control elevation-gray"
+                  placeholder="0"
+                />
+              </div>
+            </div>
+            <button class="btn btn-blue me-2" type="submit" id="filterDebitBtn">
+              <i class="bi bi-funnel me-1"></i>Filtrar
+            </button>
+          </form>
+
+          <h3 id="nullDebit" class="ms-3 mt-2"></h3>
+
+          <div
+            class="debit-cards d-none d-sm-flex gap-4 overflow-auto mb-4 ps-3"
+          >
             <!-- Card 1 -->
             <div class="card bg-primary-green-30">
               <div class="card-body p-3">
@@ -1204,208 +1468,7 @@
           </div>
           <!-- Modal - Resolver - End -->
         </div>
-
         <!-- Divergência - End -->
-
-        <!-- Informations -->
-        <div class="d-flex flex-column gap-2 overflow-x-auto">
-          <!-- Row 1 -->
-          <div class="d-flex justify-content-between gap-4">
-            <!-- Card 1 -->
-            <div class="card information-card rounded-start-0">
-              <div class="card-body d-flex p-0">
-                <div class="bg-primary-blue"></div>
-                <div class="text p-2 me-auto">
-                  <h5 class="card-title color-primary-blue">0</h5>
-                  <p class="card-text">Processo Administrativo</p>
-                </div>
-                <i
-                  class="bi bi-info-circle pt-2 pe-2"
-                  data-bs-toggle="tooltip"
-                  data-bs-title="Quantidade de processos administrativos de crédito registrados"
-                  data-bs-custom-class="custom-tooltip"
-                ></i>
-              </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="card information-card rounded-start-0">
-              <div class="card-body d-flex p-0">
-                <div class="bg-primary-blue"></div>
-                <div class="text p-2 me-auto">
-                  <h5 class="card-title color-primary-blue">2</h5>
-                  <p class="card-text">Pedidos de Crédito</p>
-                </div>
-                <i
-                  class="bi bi-info-circle pt-2 pe-2"
-                  data-bs-toggle="tooltip"
-                  data-bs-title="Quantidade de pedidos de restituição/ressarcimento de crédito registrados"
-                  data-bs-custom-class="custom-tooltip"
-                ></i>
-              </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="card information-card rounded-start-0">
-              <div class="card-body d-flex p-0">
-                <div class="bg-primary-blue"></div>
-                <div class="text p-2 me-auto">
-                  <h5 class="card-title color-primary-blue">0</h5>
-                  <p class="card-text">Declaração de Compensação</p>
-                </div>
-                <i
-                  class="bi bi-info-circle pt-2 pe-2"
-                  data-bs-toggle="tooltip"
-                  data-bs-title="Quantidade de declarações de compensação registrados"
-                  data-bs-custom-class="custom-tooltip"
-                ></i>
-              </div>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="card information-card rounded-start-0">
-              <div class="card-body d-flex p-0">
-                <div class="bg-primary-blue"></div>
-                <div class="text p-2 me-auto">
-                  <h5 class="card-title color-dark-50 fs-6">
-                    R$ <span class="color-primary-blue fs-5">0</span>
-                  </h5>
-                  <p class="card-text">Valor de Reserva</p>
-                </div>
-                <i
-                  class="bi bi-info-circle pt-2 pe-2"
-                  data-bs-toggle="tooltip"
-                  data-bs-custom-class="custom-tooltip"
-                  data-bs-title="Valores de reserva de crédito por tipo: Reserva Transitória, Dedução de Crédito, Mandado de Segurança, Recuperação Rápida
-                 "
-                ></i>
-              </div>
-            </div>
-
-            <!-- Card 5 -->
-            <div class="card information-card rounded-start-0">
-              <div class="card-body d-flex p-0">
-                <div class="bg-primary-blue"></div>
-                <div class="text p-2 me-auto">
-                  <h5 class="card-title color-dark-50 fs-6">
-                    R$ <span class="color-primary-blue fs-5">0</span>
-                  </h5>
-                  <p class="card-text">Liquidação de Crédito</p>
-                </div>
-                <i
-                  class="bi bi-info-circle pt-2 pe-2"
-                  data-bs-toggle="tooltip"
-                  data-bs-title="Detalhe do valor do pagamento de ressarcimento e restituição"
-                  data-bs-custom-class="custom-tooltip"
-                ></i>
-              </div>
-            </div>
-          </div>
-
-          <!-- Row 2 -->
-          <div class="d-flex justify-content-between gap-4">
-            <!-- Card 1 -->
-            <div class="card information-card rounded-start-0">
-              <div class="card-body d-flex p-0">
-                <div class="bg-primary-blue"></div>
-                <div class="text p-2 me-auto">
-                  <h5 class="card-title color-dark-50 fs-6">
-                    R$ <span class="color-primary-blue fs-5">0</span> mil
-                  </h5>
-                  <p class="card-text">Crédito Original Inicial</p>
-                </div>
-                <i
-                  class="bi bi-info-circle pt-2 pe-2"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="bottom"
-                  data-bs-title="Valor disponível de saldo de crédito em valor original"
-                  data-bs-custom-class="custom-tooltip"
-                ></i>
-              </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="card information-card rounded-start-0">
-              <div class="card-body d-flex p-0">
-                <div class="bg-primary-blue"></div>
-                <div class="text p-2 me-auto">
-                  <h5 class="card-title color-dark-50 fs-6">
-                    R$ <span class="color-primary-blue fs-5">0</span>
-                  </h5>
-                  <p class="card-text">Crédito Original Utilizado</p>
-                </div>
-                <i
-                  class="bi bi-info-circle pt-2 pe-2"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="bottom"
-                  data-bs-title="Valor de crédito original utilizado para a compensação de débitos"
-                  data-bs-custom-class="custom-tooltip"
-                ></i>
-              </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="card information-card rounded-start-0">
-              <div class="card-body d-flex p-0">
-                <div class="bg-primary-blue"></div>
-                <div class="text p-2 me-auto">
-                  <h5 class="card-title color-dark-50 fs-6">
-                    R$ <span class="color-primary-blue fs-5">0</span>
-                  </h5>
-                  <p class="card-text">Débitos Compensados</p>
-                </div>
-                <i
-                  class="bi bi-info-circle pt-2 pe-2"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="bottom"
-                  data-bs-title="Valor de débitos compensados"
-                  data-bs-custom-class="custom-tooltip"
-                ></i>
-              </div>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="card information-card rounded-start-0">
-              <div class="card-body d-flex p-0">
-                <div class="bg-primary-blue"></div>
-                <div class="text p-2 me-auto">
-                  <h5 class="card-title color-dark-50 fs-6">
-                    R$ <span class="color-primary-blue fs-5">11,0</span> mil
-                  </h5>
-                  <p class="card-text">Saldo de Crédito Original</p>
-                </div>
-                <i
-                  class="bi bi-info-circle pt-2 pe-2"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="bottom"
-                  data-bs-title="Valor disponível de saldo de crédito em valor original"
-                  data-bs-custom-class="custom-tooltip"
-                ></i>
-              </div>
-            </div>
-
-            <!-- Card 5 -->
-            <div class="card information-card rounded-start-0">
-              <div class="card-body d-flex p-0">
-                <div class="bg-primary-blue"></div>
-                <div class="text p-2 me-auto">
-                  <h5 class="card-title color-dark-50 fs-6">
-                    R$ <span class="color-primary-blue fs-5">11,0</span> mil
-                  </h5>
-                  <p class="card-text">Saldo de Crédito Atualizado</p>
-                </div>
-                <i
-                  class="bi bi-info-circle pt-2 pe-2"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="bottom"
-                  data-bs-title="Valor de saldo do crédito disponível"
-                  data-bs-custom-class="custom-tooltip"
-                ></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Informations - End -->
       </div>
     </main>
 

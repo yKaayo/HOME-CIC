@@ -119,6 +119,23 @@ button.btn.btn_border-none-focus:active {
   }
 }
 
+.btn-gray {
+  color: var(--color-dark);
+  background-color: transparent;
+  border: 1px var(--color-secundary-gray) solid !important;
+  transition: 0.4s;
+
+  &:hover {
+    background-color: var(--color-secundary-gray);
+    border: 1px var(--color-dark) solid;
+  }
+
+  &:focus {
+    background-color: var(--color-secundary-gray);
+    border: 1px var(--color--dark) solid;
+  }
+}
+
 /* Button Outline */
 .btn-outline-gray {
   color: var(--color-dark);

@@ -167,3 +167,41 @@ document.querySelector("#filterForm").addEventListener("submit", (e) => {
 
   chart.update();
 });
+
+document.querySelector('#filterCredit').addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  let minValue = parseInt(document.querySelector('#filterCreditInput').value, 10);
+  if (minValue > 1000) {
+    document.querySelector('.credit-cards').classList.add('d-sm-none');
+    document.querySelector('.credit-cards').classList.remove('d-sm-flex');
+    document.querySelector('#carouselCredit').classList.add('d-none');
+    document.querySelector('#carouselCredit').classList.remove('d-flex');
+    document.querySelector('#nullCredit').textContent = 'Não há créditos disponíveis';
+  } else if (minValue <= 1000){
+    document.querySelector('.credit-cards').classList.add('d-sm-flex');
+    document.querySelector('.credit-cards').classList.remove('d-sm-none');
+    document.querySelector('#carouselCredit').classList.add('d-flex');
+    document.querySelector('#carouselCredit').classList.remove('d-none');
+    document.querySelector('#nullCredit').textContent = '';
+  }
+});
+
+document.querySelector('#filterDebit').addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  let minValue = parseInt(document.querySelector('#filterDebitInput').value, 10);
+  if (minValue > 1000) {
+    document.querySelector('.debit-cards').classList.add('d-sm-none');
+    document.querySelector('.debit-cards').classList.remove('d-sm-flex');
+    document.querySelector('#carouselDebit').classList.add('d-none');
+    document.querySelector('#carouselDebit').classList.remove('d-flex');
+    document.querySelector('#nullDebit').textContent = 'Não há débitos disponíveis';
+  } else if (minValue <= 1000){
+    document.querySelector('.debit-cards').classList.add('d-sm-flex');
+    document.querySelector('.debit-cards').classList.remove('d-sm-none');
+    document.querySelector('#carouselDebit').classList.add('d-flex');
+    document.querySelector('#carouselDebit').classList.remove('d-none');
+    document.querySelector('#nullDebit').textContent = '';
+  }
+});
