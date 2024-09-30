@@ -65,83 +65,104 @@ eye.addEventListener("click", () => {
 });
 
 // Gráfico
-const data = document.querySelector('#graphic');
+const data = document.querySelector("#graphic");
 
 const chart = new Chart(data, {
-  type: 'line',
+  type: "bar",
   data: {
-    labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
-    datasets: [{
-      label: 'Créditos',
-      data: [2000, 1000, 3000, 2400, 1600, 3000, 800, 1200, 2300, 0, 0, 0],
-      borderWidth: 1,
-      backgroundColor: '#0063f7',
-      borderColor: '#0063f7'
-    },
-    {
-      label: 'Débitos',
-      data: [600, 200, 800, 400, 1200, 500, 1300, 800, 500, 0, 0, 0],
-      borderWidth: 1,
-      backgroundColor: '#00DA85',
-      borderColor: '#00DA85'
-    }]
+    labels: [
+      "Jan",
+      "Fev",
+      "Mar",
+      "Abr",
+      "Mai",
+      "Jun",
+      "Jul",
+      "Ago",
+      "Set",
+      "Out",
+      "Nov",
+      "Dez",
+    ],
+    datasets: [
+      {
+        label: "Créditos",
+        data: [2000, 1000, 3000, 2400, 1600, 3000, 800, 1200, 2300, 0, 0, 0],
+        borderWidth: 1,
+        backgroundColor: "#0063f7",
+        borderColor: "#0063f7",
+        borderSkipped: false,
+      },
+      {
+        label: "Débitos",
+        data: [600, 200, 800, 400, 1200, 500, 1300, 800, 500, 0, 0, 0],
+        borderWidth: 1,
+        backgroundColor: "#00DA85",
+        borderColor: "#00DA85",
+        borderSkipped: false,
+      },
+    ],
   },
   options: {
     responsive: true,
     maintainAspectRatio: false,
     scales: {
       y: {
-        beginAtZero: true
+        beginAtZero: true,
       }
     }
   }
 });
 
 // Filter
-document.querySelector('#filterForm').addEventListener('submit', (e) => {
+document.querySelector("#filterForm").addEventListener("submit", (e) => {
   e.preventDefault();
 
-  const graphicType = document.querySelector('#graphicType').value;
+  const graphicType = document.querySelector("#graphicType").value;
   chart.config.type = graphicType;
-  
-  const graphicData = document.querySelector('#graphicData').value;
-  if (graphicData == 'creditData') {
+
+  const graphicData = document.querySelector("#graphicData").value;
+  if (graphicData == "creditData") {
     chart.data.datasets.pop();
     chart.data.datasets.pop();
     chart.data.datasets.push({
-      label: 'Créditos',
+      label: "Créditos",
       data: [2000, 1000, 3000, 2400, 1600, 3000, 800, 1200, 2300, 0, 0, 0],
       borderWidth: 1,
-      backgroundColor: '#0063f7',
-      borderColor: '#0063f7'
+      backgroundColor: "#0063f7",
+      borderColor: "#0063f7",
     });
-  } else if (graphicData == 'debitData') {
+  } else if (graphicData == "debitData") {
     chart.data.datasets.pop();
     chart.data.datasets.pop();
     chart.data.datasets.push({
-      label: 'Débitos',
+      label: "Débitos",
       data: [600, 200, 800, 400, 1200, 500, 1300, 800, 500, 0, 0, 0],
       borderWidth: 1,
-      backgroundColor: '#00DA85',
-      borderColor: '#00DA85'
+      backgroundColor: "#00DA85",
+      borderColor: "#00DA85",
     });
-  } else if (graphicData == 'bothData') {
+  } else if (graphicData == "bothData") {
     chart.data.datasets.pop();
     chart.data.datasets.pop();
-    chart.data.datasets.push({
-      label: 'Créditos',
-      data: [2000, 1000, 3000, 2400, 1600, 3000, 800, 1200, 2300, 0, 0, 0],
-      borderWidth: 1,
-      backgroundColor: '#0063f7',
-      borderColor: '#0063f7'
-    });
-    chart.data.datasets.push({
-      label: 'Débitos',
-      data: [600, 200, 800, 400, 1200, 500, 1300, 800, 500, 0, 0, 0],
-      borderWidth: 1,
-      backgroundColor: '#00DA85',
-      borderColor: '#00DA85'
-    });
+    chart.data.datasets.push(
+      {
+        label: "Créditos",
+        data: [2000, 1000, 3000, 2400, 1600, 3000, 800, 1200, 2300, 0, 0, 0],
+        borderWidth: 1,
+        backgroundColor: "#0063f7",
+        borderColor: "#0063f7",
+        borderSkipped: false,
+      },
+      {
+        label: "Débitos",
+        data: [600, 200, 800, 400, 1200, 500, 1300, 800, 500, 0, 0, 0],
+        borderWidth: 1,
+        backgroundColor: "#00DA85",
+        borderColor: "#00DA85",
+        borderSkipped: false,
+      }
+    );
   }
 
   chart.update();
