@@ -92,6 +92,11 @@
   bottom: -5.8rem;
 }
 
+/* Filter */
+#filterCreditDocumentInput, #filterDebitDocumentInput {
+  width: 14.8rem;
+}
+
 .carousel-indicators circle {
   stroke: var(--color-dark);
   stroke-width: 2;

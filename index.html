@@ -468,7 +468,11 @@
           </div>
 
           <!-- Filter -->
-          <form action="" class="d-flex gap-3" id="filterForm">
+          <form
+            action=""
+            class="d-flex align-items-center gap-3"
+            id="filterForm"
+          >
             <div class="filters d-flex flex-column flex-sm-row gap-2">
               <!-- Graphic Type -->
               <div class="dropdown">
@@ -499,7 +503,7 @@
         </div>
 
         <!-- Informations -->
-        <div class="d-flex flex-column gap-2 overflow-x-auto">
+        <div class="d-flex flex-column gap-4 overflow-x-auto">
           <!-- Row 1 -->
           <div class="d-flex justify-content-between gap-4">
             <!-- Card 1 -->
@@ -706,8 +710,13 @@
           </h3>
 
           <!-- Credit Filter -->
-          <form action="" class="d-flex mb-2 gap-3" id="filterCredit">
-            <div class="dropdown">
+          <form
+            action=""
+            class="d-flex align-items-center mb-2 gap-3"
+            id="filterCredit"
+          >
+            <div class="dropdown d-flex gap-2">
+              <!-- Min Value -->
               <button
                 class="btn btn-gray dropdown-toggle"
                 type="button"
@@ -1094,25 +1103,28 @@
 
           <!-- Debit Filter -->
           <form action="" class="d-flex mb-2 gap-3" id="filterDebit">
-            <div class="dropdown">
-              <button
-                class="btn btn-gray dropdown-toggle"
-                type="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Valor
-              </button>
-              <div class="dropdown-menu px-2">
-                <label for="filterDebitInput" class="form-label"
-                  >Digite o valor mínimo:
-                </label>
-                <input
-                  type="number"
-                  id="filterDebitInput"
-                  class="form-control elevation-gray"
-                  placeholder="0"
-                />
+            <div class="dropdown d-flex gap-2">
+              <!-- Min Value -->
+              <div class="dropdown">
+                <button
+                  class="btn btn-gray dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Valor
+                </button>
+                <div class="dropdown-menu px-2">
+                  <label for="filterDebitInput" class="form-label"
+                    >Digite o valor mínimo:
+                  </label>
+                  <input
+                    type="number"
+                    id="filterDebitInput"
+                    class="form-control elevation-gray"
+                    placeholder="0"
+                  />
+                </div>
               </div>
             </div>
             <button class="btn btn-blue me-2" type="submit" id="filterDebitBtn">
