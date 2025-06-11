@@ -1,10 +1,4 @@
-// Tooltips Bootstrap
-const tooltipTriggerList = document.querySelectorAll(
-  '[data-bs-toggle="tooltip"]'
-);
-const tooltipList = [...tooltipTriggerList].map(
-  (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
-);
+import Chart from "chart.js/auto";
 
 // Side Menu
 const btnToggler = document.querySelector("#btn-togler");
@@ -109,9 +103,9 @@ const chart = new Chart(data, {
     scales: {
       y: {
         beginAtZero: true,
-      }
-    }
-  }
+      },
+    },
+  },
 });
 
 // Filter
@@ -161,47 +155,55 @@ document.querySelector("#filterForm").addEventListener("submit", (e) => {
         backgroundColor: "#00DA85",
         borderColor: "#00DA85",
         borderSkipped: false,
-      }
+      },
     );
   }
 
   chart.update();
 });
 
-document.querySelector('#filterCredit').addEventListener('submit', (e) => {
+document.querySelector("#filterCredit").addEventListener("submit", (e) => {
   e.preventDefault();
 
-  let minValue = parseInt(document.querySelector('#filterCreditInput').value, 10);
+  let minValue = parseInt(
+    document.querySelector("#filterCreditInput").value,
+    10,
+  );
   if (minValue > 1000) {
-    document.querySelector('.credit-cards').classList.add('d-sm-none');
-    document.querySelector('.credit-cards').classList.remove('d-sm-flex');
-    document.querySelector('#carouselCredit').classList.add('d-none');
-    document.querySelector('#carouselCredit').classList.remove('d-flex');
-    document.querySelector('#nullCredit').textContent = 'Não há créditos disponíveis';
-  } else if (minValue <= 1000){
-    document.querySelector('.credit-cards').classList.add('d-sm-flex');
-    document.querySelector('.credit-cards').classList.remove('d-sm-none');
-    document.querySelector('#carouselCredit').classList.add('d-flex');
-    document.querySelector('#carouselCredit').classList.remove('d-none');
-    document.querySelector('#nullCredit').textContent = '';
+    document.querySelector(".credit-cards").classList.add("d-sm-none");
+    document.querySelector(".credit-cards").classList.remove("d-sm-flex");
+    document.querySelector("#carouselCredit").classList.add("d-none");
+    document.querySelector("#carouselCredit").classList.remove("d-flex");
+    document.querySelector("#nullCredit").textContent =
+      "Não há créditos disponíveis";
+  } else if (minValue <= 1000) {
+    document.querySelector(".credit-cards").classList.add("d-sm-flex");
+    document.querySelector(".credit-cards").classList.remove("d-sm-none");
+    document.querySelector("#carouselCredit").classList.add("d-flex");
+    document.querySelector("#carouselCredit").classList.remove("d-none");
+    document.querySelector("#nullCredit").textContent = "";
   }
 });
 
-document.querySelector('#filterDebit').addEventListener('submit', (e) => {
+document.querySelector("#filterDebit").addEventListener("submit", (e) => {
   e.preventDefault();
 
-  let minValue = parseInt(document.querySelector('#filterDebitInput').value, 10);
+  let minValue = parseInt(
+    document.querySelector("#filterDebitInput").value,
+    10,
+  );
   if (minValue > 1000) {
-    document.querySelector('.debit-cards').classList.add('d-sm-none');
-    document.querySelector('.debit-cards').classList.remove('d-sm-flex');
-    document.querySelector('#carouselDebit').classList.add('d-none');
-    document.querySelector('#carouselDebit').classList.remove('d-flex');
-    document.querySelector('#nullDebit').textContent = 'Não há débitos disponíveis';
-  } else if (minValue <= 1000){
-    document.querySelector('.debit-cards').classList.add('d-sm-flex');
-    document.querySelector('.debit-cards').classList.remove('d-sm-none');
-    document.querySelector('#carouselDebit').classList.add('d-flex');
-    document.querySelector('#carouselDebit').classList.remove('d-none');
-    document.querySelector('#nullDebit').textContent = '';
+    document.querySelector(".debit-cards").classList.add("d-sm-none");
+    document.querySelector(".debit-cards").classList.remove("d-sm-flex");
+    document.querySelector("#carouselDebit").classList.add("d-none");
+    document.querySelector("#carouselDebit").classList.remove("d-flex");
+    document.querySelector("#nullDebit").textContent =
+      "Não há débitos disponíveis";
+  } else if (minValue <= 1000) {
+    document.querySelector(".debit-cards").classList.add("d-sm-flex");
+    document.querySelector(".debit-cards").classList.remove("d-sm-none");
+    document.querySelector("#carouselDebit").classList.add("d-flex");
+    document.querySelector("#carouselDebit").classList.remove("d-none");
+    document.querySelector("#nullDebit").textContent = "";
   }
 });
